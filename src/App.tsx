@@ -11,7 +11,7 @@ import Chatbot from "./components/Chatbot";
 
 export default function App() {
   return (
-    <div className="bg-[#050505] min-h-screen text-white relative">
+    <div className="bg-[#050505] min-h-screen text-white relative overflow-x-hidden">
       <Navbar />
       <Hero />
       <About />
