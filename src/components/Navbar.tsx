@@ -64,7 +64,7 @@ export default function Navbar() {
 
             {/* Mobile Menu */}
             {isMobileMenuOpen && (
-                <div className="md:hidden glass absolute top-full left-0 w-full animate-in fade-in slide-in-from-top-4 duration-300">
+                <div className="md:hidden fixed inset-x-0 top-[72px] bg-black/95 backdrop-blur-3xl animate-in fade-in slide-in-from-top-4 duration-300 border-b border-white/10">
                     <div className="px-5 pt-8 pb-10 space-y-2 flex flex-col items-center" style={{ gap: '12px' }}>
                         {navLinks.map((link) => (
                             <a
