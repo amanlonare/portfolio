@@ -138,7 +138,7 @@ export const TechStack = () => {
         </LayerContainer>
 
         {/* AI Layer */}
-        <LayerContainer title="Intelligence Layer" index={2}>
+        <LayerContainer title="AI Intelligence Layer" index={2}>
           <SubCategory label="ML Frameworks">
             <TechPill icon={SiPytorch} name="PyTorch" color="orange" />
             <TechPill icon={SiTensorflow} name="TensorFlow" color="orange" />
