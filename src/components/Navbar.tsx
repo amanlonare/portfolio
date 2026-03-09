@@ -65,12 +65,12 @@ export default function Navbar() {
             {/* Mobile Menu */}
             {isMobileMenuOpen && (
                 <div className="md:hidden glass absolute top-full left-0 w-full animate-in fade-in slide-in-from-top-4 duration-300">
-                    <div className="px-2 pt-4 pb-4 space-y-1 sm:px-3 flex flex-col" style={{ gap: '16px' }}>
+                    <div className="px-5 pt-8 pb-10 space-y-2 flex flex-col items-center" style={{ gap: '12px' }}>
                         {navLinks.map((link) => (
                             <a
                                 key={link.name}
                                 href={link.href}
-                                className="block px-3 py-2 text-base font-medium hover:text-[#00f2ff] hover:bg-white/5 rounded-md text-white"
+                                className="block w-full text-center px-3 py-3 text-lg font-medium hover:text-[#00f2ff] hover:bg-white/5 rounded-xl text-white transition-all"
                                 onClick={() => setIsMobileMenuOpen(false)}
                             >
                                 {link.name}

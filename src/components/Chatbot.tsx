@@ -108,7 +108,7 @@ export default function Chatbot() {
         <>
             <AnimatePresence>
                 {!isOpen && (
-                    <div className="fixed bottom-6 right-6 z-50 flex flex-col items-center">
+                    <div className="fixed bottom-4 right-4 md:bottom-6 md:right-6 z-50 flex flex-col items-center">
                         {/* Speech Bubble */}
                         <AnimatePresence mode="wait">
                             <motion.div
@@ -156,7 +156,7 @@ export default function Chatbot() {
                         animate={{ opacity: 1, y: 0, scale: 1 }}
                         exit={{ opacity: 0, y: 50, scale: 0.95 }}
                         transition={{ type: "spring", bounce: 0.3, duration: 0.5 }}
-                        className="fixed bottom-6 right-6 z-50 w-[350px] sm:w-[400px] h-[550px] max-h-[80vh] flex flex-col rounded-2xl overflow-hidden bg-[#0a0b10]/80 border border-cyan-500/30 backdrop-blur-xl shadow-[0_0_30px_rgba(0,242,255,0.15)]"
+                        className="fixed bottom-4 right-4 md:bottom-6 md:right-6 z-50 w-[calc(100vw-2rem)] sm:w-[400px] h-[550px] max-h-[80vh] flex flex-col rounded-2xl overflow-hidden bg-[#0a0b10]/80 border border-cyan-500/30 backdrop-blur-xl shadow-[0_0_30px_rgba(0,242,255,0.15)]"
                     >
                         {/* Header */}
                         <div className="flex items-center justify-between px-5 py-4 bg-gradient-to-r from-black/60 to-cyan-900/40 border-b border-cyan-500/30">

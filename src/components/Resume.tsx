@@ -43,17 +43,17 @@ const ExperienceItem = ({ role, company, period, description, tags, index, link 
     whileInView={{ opacity: 1, y: 0 }}
     viewport={{ once: true }}
     transition={{ duration: 0.5, delay: index * 0.1 }}
-    className="group relative pl-8 border-l border-white/10 hover:border-cyan-500/50 transition-colors duration-300"
+    className="group relative pl-6 md:pl-8 border-l border-white/10 hover:border-cyan-500/50 transition-colors duration-300"
   >
     <div className="absolute -left-[5px] top-0 w-[9px] h-[9px] rounded-full bg-gray-800 group-hover:bg-cyan-400 transition-colors duration-300 border border-black" />
 
-    <div className="flex flex-col sm:flex-row sm:items-baseline sm:justify-between mb-2">
-      <h4 className="text-xl font-bold text-white group-hover:text-cyan-400 transition-colors">{role}</h4>
-      <span className="text-sm font-mono text-gray-500">{period}</span>
+    <div className="flex flex-col sm:flex-row sm:items-baseline sm:justify-between mb-2 gap-1">
+      <h4 className="text-lg md:text-xl font-bold text-white group-hover:text-cyan-400 transition-colors">{role}</h4>
+      <span className="text-[10px] md:text-sm font-mono text-gray-500">{period}</span>
     </div>
 
     <div className="flex items-center gap-3 mb-4">
-      <div className="text-lg font-medium text-gray-400">{company}</div>
+      <div className="text-base md:text-lg font-medium text-gray-400">{company}</div>
       {link && (
         <a
           href={link.startsWith('http') ? link : `https://${link}`}
@@ -65,7 +65,7 @@ const ExperienceItem = ({ role, company, period, description, tags, index, link 
         </a>
       )}
     </div>
-    <p className="text-gray-400 leading-relaxed max-w-3xl mb-6">{description}</p>
+    <p className="text-sm md:text-base text-gray-400 leading-relaxed max-w-3xl mb-6">{description}</p>
 
     <div className="flex flex-wrap gap-2">
       {tags.map(tag => {
@@ -93,11 +93,11 @@ const ProjectItem = ({ title, description, tags, links, index }: { title: string
     whileInView={{ opacity: 1, y: 0 }}
     viewport={{ once: true }}
     transition={{ duration: 0.5, delay: index * 0.1 }}
-    className="group relative p-8 rounded-2xl bg-white/5 border border-white/10 hover:border-cyan-500/30 hover:bg-white/[0.07] transition-all duration-300 flex flex-col h-full"
+    className="group relative p-6 md:p-8 rounded-2xl bg-white/5 border border-white/10 hover:border-cyan-500/30 hover:bg-white/[0.07] transition-all duration-300 flex flex-col h-full"
   >
     <div className="flex flex-col gap-6 flex-grow">
       <div className="flex justify-between items-start">
-        <h4 className="text-2xl font-bold text-white group-hover:text-cyan-400 transition-colors">{title}</h4>
+        <h4 className="text-xl md:text-2xl font-bold text-white group-hover:text-cyan-400 transition-colors">{title}</h4>
         <div className="flex gap-3">
           {links?.map((link, i) => {
             let Icon = ExternalLink;
@@ -200,7 +200,7 @@ export const Resume = () => {
   return (
     <div className="min-h-screen bg-[#050505] relative z-10 text-gray-200 selection:bg-cyan-500/30 selection:text-cyan-200">
 
-      <main className="max-w-7xl mx-auto px-6 md:px-12 py-24 space-y-32">
+      <main className="max-w-7xl mx-auto px-6 md:px-12 py-12 md:py-24 space-y-24 md:space-y-32">
 
         {/* Tech Stack Section - The Hero Feature */}
         <section id="skills">

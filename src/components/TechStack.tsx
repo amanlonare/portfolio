@@ -45,25 +45,25 @@ const TechPill = ({ icon: Icon, name, color }: { icon: any, name: string, color:
     <motion.div
       whileHover={{ scale: 1.05, y: -2 }}
       className={`
-        flex items-center gap-2.5 md:gap-3 px-4 py-2 md:px-5 md:py-2.5 rounded-full 
+        flex items-center gap-2 md:gap-3 px-3 py-1.5 md:px-5 md:py-2.5 rounded-full 
         bg-white/5 border border-white/10 
         backdrop-blur-md shadow-lg
         hover:border-${color}-500/50 hover:bg-${color}-500/10 transition-all duration-300 group cursor-default
       `}
     >
-      <Icon className={`w-4 h-4 md:w-5 md:h-5 lg:w-6 lg:h-6 text-gray-400 group-hover:text-${color}-400 transition-colors`} />
-      <span className="text-sm md:text-base font-medium text-gray-400 group-hover:text-white transition-colors">{name}</span>
+      <Icon className={`w-3.5 h-3.5 md:w-5 md:h-5 lg:w-6 lg:h-6 text-gray-400 group-hover:text-${color}-400 transition-colors`} />
+      <span className="text-xs md:text-base font-medium text-gray-400 group-hover:text-white transition-colors">{name}</span>
     </motion.div>
   );
 };
 
 // Sub-category row component
 const SubCategory = ({ label, children }: { label: string, children: React.ReactNode }) => (
-  <div className="flex flex-col md:flex-row items-center gap-4 md:gap-8 w-full justify-center md:justify-start px-4">
-    <span className="text-[10px] md:text-xs font-bold text-cyan-500/50 uppercase tracking-[0.2em] md:w-32 md:text-right shrink-0 border-b md:border-b-0 md:border-r border-white/10 pb-1 md:pb-0 md:pr-6">
+  <div className="flex flex-col md:flex-row items-center gap-4 md:gap-5 lg:gap-8 w-full justify-center md:justify-start px-4">
+    <span className="text-[10px] md:text-xs font-bold text-cyan-500/50 uppercase tracking-[0.2em] md:w-32 md:text-right shrink-0 border-b md:border-b-0 md:border-r border-white/10 pb-1.5 md:pb-0 md:pr-6">
       {label}
     </span>
-    <div className="flex flex-wrap justify-center md:justify-start gap-3 md:gap-4">
+    <div className="flex flex-wrap justify-center md:justify-start gap-2.5 md:gap-4">
       {children}
     </div>
   </div>
@@ -80,7 +80,7 @@ const LayerContainer = ({ title, children, index = 0 }: { title: string, childre
       className="relative w-full max-w-6xl mx-auto"
     >
       <div className="
-        relative z-10 flex flex-col items-center justify-center p-8 
+        relative z-10 flex flex-col items-center justify-center p-6 md:p-8 
         rounded-2xl border border-white/10 bg-white/5
         backdrop-blur-xl shadow-2xl overflow-hidden group hover:border-cyan-500/20 transition-colors duration-500
       ">

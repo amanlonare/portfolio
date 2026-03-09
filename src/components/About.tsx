@@ -11,14 +11,14 @@ export default function About() {
     ];
 
     return (
-        <section id="about" className="py-24 relative overflow-hidden">
+        <section id="about" className="py-16 md:py-24 relative overflow-hidden">
             <div className="max-w-7xl mx-auto px-6 md:px-12">
-                <div className="flex items-center gap-4 mb-20">
-                    <h3 className="text-3xl font-bold text-white tracking-tight">About Me</h3>
+                <div className="flex items-center gap-4 mb-12 md:mb-20">
+                    <h3 className="text-2xl md:text-3xl font-bold text-white tracking-tight">About Me</h3>
                     <div className="h-px flex-1 bg-gradient-to-r from-cyan-500/50 to-transparent" />
                 </div>
 
-                <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 items-start">
+                <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-start">
                     {/* Left Column: Image & Hobbies */}
                     <div className="lg:col-span-5 space-y-12">
                         <motion.div
@@ -49,7 +49,7 @@ export default function About() {
                                 <Heart className="w-4 h-4 text-cyan-400" />
                                 Beyond the Code
                             </h5>
-                            <p className="text-gray-400 text-sm leading-relaxed">
+                            <p className="text-gray-400 text-xs md:text-sm leading-relaxed">
                                 When I'm not architecting AI systems, you'll find me playing in badminton tournaments,
                                 spending quality time with my family, or recharging in nature.
                             </p>
@@ -72,7 +72,7 @@ export default function About() {
                             <h4 className="text-3xl md:text-4xl font-bold text-white leading-tight">
                                 Crafting Intelligent Systems<br />with <span className="text-cyan-400">Social Purpose</span>.
                             </h4>
-                            <p className="text-gray-400 text-lg leading-relaxed whitespace-pre-wrap">
+                            <p className="text-gray-400 text-base md:text-lg leading-relaxed whitespace-pre-wrap">
                                 {portfolioData.about.split('\n\n')[0]}
                             </p>
                             <div className="p-4 rounded-xl bg-cyan-500/5 border border-cyan-500/20">

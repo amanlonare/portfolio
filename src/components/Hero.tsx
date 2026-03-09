@@ -33,15 +33,15 @@ export default function Hero() {
                     I'm <span className="text-neon transition-all">Aman Lonare</span>
                 </h1>
 
-                <div className="h-16 md:h-24 mb-8 text-2xl md:text-5xl font-accent font-extrabold text-[#00f2ff] drop-shadow-[0_0_10px_rgba(0,242,255,0.3)] tracking-tight flex items-center justify-center">
+                <div className="h-12 md:h-24 mb-6 md:mb-8 text-xl md:text-5xl font-accent font-extrabold text-[#00f2ff] drop-shadow-[0_0_10px_rgba(0,242,255,0.3)] tracking-tight flex items-center justify-center">
                     <span ref={el}></span>
                 </div>
 
-                <p className="text-base md:text-lg text-gray-400 mb-6 max-w-lg mx-auto leading-relaxed">
+                <p className="text-sm md:text-lg text-gray-400 mb-8 md:mb-6 max-w-lg mx-auto leading-relaxed px-4">
                     Bridging the gap between cutting-edge AI research<br className="hidden md:block" /> and production-grade software engineering.
                 </p>
 
-                <div className="flex justify-center mb-6" style={{ gap: '20px' }}>
+                <div className="flex justify-center mb-10 md:mb-6 gap-4 md:gap-5">
                     {[
                         { icon: Github, href: portfolioData.socials.github },
                         { icon: Linkedin, href: portfolioData.socials.linkedin },
@@ -55,10 +55,8 @@ export default function Hero() {
                             rel="noopener noreferrer"
                             onMouseEnter={() => setHoveredIndex(index)}
                             onMouseLeave={() => setHoveredIndex(null)}
-                            className="flex items-center justify-center glass rounded-full transition-all duration-300 active:scale-95"
+                            className="flex items-center justify-center glass rounded-full transition-all duration-300 active:scale-95 w-11 h-11 md:w-[54px] md:h-[54px]"
                             style={{
-                                width: '54px',
-                                height: '54px',
                                 textDecoration: 'none',
                                 color: hoveredIndex === index ? '#00f2ff' : '#a0a0b0',
                                 border: hoveredIndex === index ? '1px solid #00f2ff' : '1px solid rgba(255, 255, 255, 0.1)',
@@ -68,7 +66,7 @@ export default function Hero() {
                                 zIndex: hoveredIndex === index ? 20 : 1
                             }}
                         >
-                            <social.icon style={{ width: '26px', height: '26px' }} />
+                            <social.icon className="w-5 h-5 md:w-6 md:h-6" />
                         </a>
                     ))}
                 </div>
