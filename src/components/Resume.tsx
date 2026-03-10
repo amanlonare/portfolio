@@ -455,7 +455,7 @@ export const Resume = () => {
 
       <footer className="border-t border-white/5 py-16 text-center text-gray-600">
         <div className="max-w-7xl mx-auto px-6">
-          <p className="text-sm">© 2026 Aman Lonare. Built with precision using React & Framer Motion.</p>
+          <p className="text-sm">© 2026 Monu Kumari. Built with precision using React & Framer Motion.</p>
         </div>
       </footer>
     </div>

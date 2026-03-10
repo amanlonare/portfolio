@@ -1,11 +1,9 @@
 export const portfolioData = {
-  name: "Aman Lonare",
+  name: "Monu Kumari",
   roles: [
-    "Senior AI Engineer",
-    "Full Stack Developer",
-    "Senior ML Engineer",
-    "Research Engineer",
-    "An Entrepreneur"
+    "UI Designer",
+    "UX Researcher",
+    "Graphic Designer"
   ],
   socials: {
     github: "https://github.com/amanlonare",

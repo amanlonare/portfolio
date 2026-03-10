@@ -1,6 +1,6 @@
 export const CHATBOT_CONTEXT = `
-Name: Aman Lonare
-Role: Senior AI Engineer / Entrepreneur / Senior ML Engineer
+Name: Monu Kumari
+Role: UI Designer / UX Researcher / Graphic Designer
 
 # About
 I am a Senior AI Engineer who is deeply convinced that sustainable development through technology is a must. I love building systems that serve society as much as possible, turning ideas into action through AI.
@@ -53,7 +53,7 @@ Developed an interactive Geospatial web portal for real-time agricultural monito
 - Instagram: https://www.instagram.com/lonare_aman95
 
 # Resume
-AMAN LONARE
+MONU KUMARI
 Email: amanlonare95@gmail.com | Phone: +81-80-7557-2462 | Location: Tokyo, Japan | Github | Portfolio
 SUMMARY
 AI and Machine Learning Engineer with 5+ years of experience building & deploying production-grade ML and

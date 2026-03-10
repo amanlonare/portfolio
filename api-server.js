@@ -19,8 +19,8 @@ if (!process.env.OPENAI_API_KEY && !process.env.VITE_OPENAI_API_KEY) {
 }
 
 const RESUME_CONTEXT = `
-Name: Aman Lonare
-Role: Senior AI Engineer / Entrepreneur / Senior ML Engineer
+Name: Monu Kumari
+Role: UI Designer / UX Researcher / Graphic Designer
 
 # About
 I am a Senior AI Engineer who is deeply convinced that sustainable development through technology is a must. I love building systems that serve society as much as possible, turning ideas into action through AI.
@@ -73,7 +73,7 @@ Developed an interactive Geospatial web portal for real-time agricultural monito
 - Instagram: https://www.instagram.com/lonare_aman95
 
 # Resume
-AMAN LONARE
+MONU KUMARI
 Email: amanlonare95@gmail.com | Phone: +81-80-7557-2462 | Location: Tokyo, Japan | Github | Portfolio
 SUMMARY
 AI and Machine Learning Engineer with 5+ years of experience building & deploying production-grade ML and
@@ -183,7 +183,7 @@ app.post('/api/chat', async (req, res) => {
 
         if (messageString.length > 20000) { // roughly 5000 tokens of input
             return res.json({
-                text: "Aman has put in guardrails to limit the cost of this AI to 5000 tokens per session, and it looks like we've reached that limit! For deeper technical discussions or to get in touch, please reach out directly: \n- LinkedIn: https://www.linkedin.com/in/aman-lonare-546229103/ \n- GitHub: https://github.com/amanlonare \n- Email: amanlonare95@gmail.com"
+                text: "Monu has put in guardrails to limit the cost of this AI to 5000 tokens per session, and it looks like we've reached that limit! For deeper technical discussions or to get in touch, please reach out directly: \n- LinkedIn: https://www.linkedin.com/in/aman-lonare-546229103/ \n- GitHub: https://github.com/amanlonare \n- Email: amanlonare95@gmail.com"
             });
         }
 
@@ -192,8 +192,8 @@ app.post('/api/chat', async (req, res) => {
             messages: [
                 {
                     role: 'system',
-                    content: `You are Aman Lonare's AI Assistant. 
-          Use the following resume context to answer questions about Aman:
+                    content: `You are Monu Kumari's AI Assistant. 
+          Use the following resume context to answer questions about Monu:
           ${RESUME_CONTEXT}
           
           Guidelines:

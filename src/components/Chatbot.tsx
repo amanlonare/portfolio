@@ -32,7 +32,7 @@ export default function Chatbot() {
     const [messages, setMessages] = useState<Message[]>([
         {
             id: "1",
-            text: "Hi there! I'm Aman's AI assistant. Ask me anything about his experience, skills, or projects!",
+            text: "Hi there! I'm Monu's AI assistant. Ask me anything about her experience, skills, or projects!",
             sender: "bot",
             timestamp: new Date()
         }

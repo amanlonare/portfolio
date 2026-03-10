@@ -30,7 +30,7 @@ export default function Hero() {
             <div className="z-10 text-center px-4 max-w-4xl mx-auto">
                 <h1 className="text-2xl md:text-4xl font-accent mb-2 text-gray-400">Hi there,</h1>
                 <h1 className="text-4xl md:text-6xl font-accent font-extrabold mb-6 tracking-tight text-white">
-                    I'm <span className="text-neon transition-all">Aman Lonare</span>
+                    I'm <span className="text-neon transition-all">Monu Kumari</span>
                 </h1>
 
                 <div className="h-12 md:h-24 mb-6 md:mb-8 text-xl md:text-5xl font-accent font-extrabold text-[#00f2ff] drop-shadow-[0_0_10px_rgba(0,242,255,0.3)] tracking-tight flex items-center justify-center">
