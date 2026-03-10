@@ -1,6 +1,6 @@
 export const CHATBOT_CONTEXT = `
 Name: Monu Kumari
-Role: Senior AI Engineer / Entrepreneur / Senior ML Engineer
+Role: UI Designer / UX Researcher / Graphic Designer
 
 # About
 I am a Senior AI Engineer who is deeply convinced that sustainable development through technology is a must. I love building systems that serve society as much as possible, turning ideas into action through AI.
