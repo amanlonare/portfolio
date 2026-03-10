@@ -30,7 +30,7 @@ export default function Navbar() {
                     {/* Logo */}
                     <div className="flex items-center gap-2 group cursor-pointer" onClick={() => window.scrollTo(0, 0)}>
                         <span className="font-orbitron tracking-widest text-[#00f2ff] font-bold text-lg md:text-xl">
-                            &lt;<span className="text-white">aman</span> lonare/&gt;
+                            &lt;<span className="text-white">monu</span> kumari/&gt;
                         </span>
                     </div>
 

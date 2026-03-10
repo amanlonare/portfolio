@@ -1,5 +1,5 @@
 export const portfolioData = {
-  name: "Aman Lonare",
+  name: "Monu Kumari",
   roles: [
     "Senior AI Engineer",
     "Full Stack Developer",

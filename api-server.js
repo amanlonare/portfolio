@@ -19,7 +19,7 @@ if (!process.env.OPENAI_API_KEY && !process.env.VITE_OPENAI_API_KEY) {
 }
 
 const RESUME_CONTEXT = `
-Name: Aman Lonare
+Name: Monu Kumari
 Role: Senior AI Engineer / Entrepreneur / Senior ML Engineer
 
 # About
@@ -73,7 +73,7 @@ Developed an interactive Geospatial web portal for real-time agricultural monito
 - Instagram: https://www.instagram.com/lonare_aman95
 
 # Resume
-AMAN LONARE
+MONU KUMARI
 Email: amanlonare95@gmail.com | Phone: +81-80-7557-2462 | Location: Tokyo, Japan | Github | Portfolio
 SUMMARY
 AI and Machine Learning Engineer with 5+ years of experience building & deploying production-grade ML and
