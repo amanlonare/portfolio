@@ -39,8 +39,26 @@ import {
 import { FaAws, FaMicrosoft, FaGoogle } from "react-icons/fa";
 import { Database, BookOpen, Brain, Cloud, Server, Workflow } from "lucide-react";
 
+// Color mapping for Tailwind classes to ensure they are picked up by the compiler
+const COLOR_MAP: Record<string, { border: string, bg: string, text: string }> = {
+  yellow: { border: "hover:border-yellow-500/50", bg: "hover:bg-yellow-500/10", text: "group-hover:text-yellow-400 group-hover/layer:text-yellow-400" },
+  blue: { border: "hover:border-blue-500/50", bg: "hover:bg-blue-500/10", text: "group-hover:text-blue-400 group-hover/layer:text-blue-400" },
+  cyan: { border: "hover:border-cyan-500/50", bg: "hover:bg-cyan-500/10", text: "group-hover:text-cyan-400 group-hover/layer:text-cyan-400" },
+  slate: { border: "hover:border-slate-500/50", bg: "hover:bg-slate-500/10", text: "group-hover:text-slate-400 group-hover/layer:text-slate-400" },
+  sky: { border: "hover:border-sky-500/50", bg: "hover:bg-sky-500/10", text: "group-hover:text-sky-400 group-hover/layer:text-sky-400" },
+  orange: { border: "hover:border-orange-500/50", bg: "hover:bg-orange-500/10", text: "group-hover:text-orange-400 group-hover/layer:text-orange-400" },
+  teal: { border: "hover:border-teal-500/50", bg: "hover:bg-teal-500/10", text: "group-hover:text-teal-400 group-hover/layer:text-teal-400" },
+  green: { border: "hover:border-green-500/50", bg: "hover:bg-green-500/10", text: "group-hover:text-green-400 group-hover/layer:text-green-400" },
+  purple: { border: "hover:border-purple-500/50", bg: "hover:bg-purple-500/10", text: "group-hover:text-purple-400 group-hover/layer:text-purple-400" },
+  emerald: { border: "hover:border-emerald-500/50", bg: "hover:bg-emerald-500/10", text: "group-hover:text-emerald-400 group-hover/layer:text-emerald-400" },
+  red: { border: "hover:border-red-500/50", bg: "hover:bg-red-500/10", text: "group-hover:text-red-400 group-hover/layer:text-red-400" },
+  indigo: { border: "hover:border-indigo-500/50", bg: "hover:bg-indigo-500/10", text: "group-hover:text-indigo-400 group-hover/layer:text-indigo-400" },
+};
+
 // Reusable pill component for individual technologies
 const TechPill = ({ icon: Icon, name, color }: { icon: any, name: string, color: string }) => {
+  const styles = COLOR_MAP[color] || COLOR_MAP.cyan;
+
   return (
     <motion.div
       whileHover={{ scale: 1.05, y: -2 }}
@@ -48,11 +66,11 @@ const TechPill = ({ icon: Icon, name, color }: { icon: any, name: string, color:
         flex items-center gap-2 md:gap-3 px-3 py-1.5 md:px-5 md:py-2.5 rounded-full 
         bg-white/5 border border-white/10 
         backdrop-blur-md shadow-lg
-        hover:border-${color}-500/50 hover:bg-${color}-500/10 transition-all duration-300 group cursor-default
+        ${styles.border} ${styles.bg} transition-all duration-300 group cursor-default
       `}
     >
-      <Icon className={`w-3.5 h-3.5 md:w-5 md:h-5 lg:w-6 lg:h-6 text-gray-400 group-hover:text-${color}-400 transition-colors`} />
-      <span className="text-xs md:text-base font-medium text-gray-400 group-hover:text-white transition-colors">{name}</span>
+      <Icon className={`w-3.5 h-3.5 md:w-5 md:h-5 lg:w-6 lg:h-6 text-gray-400 ${styles.text} transition-colors duration-300`} />
+      <span className="text-xs md:text-base font-medium text-gray-400 group-hover:text-white group-hover/layer:text-white transition-colors duration-300">{name}</span>
     </motion.div>
   );
 };
@@ -82,10 +100,10 @@ const LayerContainer = ({ title, children, index = 0 }: { title: string, childre
       <div className="
         relative z-10 flex flex-col items-center justify-center p-6 md:p-8 
         rounded-2xl border border-white/10 bg-white/5
-        backdrop-blur-xl shadow-2xl overflow-hidden group hover:border-cyan-500/20 transition-colors duration-500
+        backdrop-blur-xl shadow-2xl overflow-hidden group/layer hover:border-cyan-500/20 transition-colors duration-500
       ">
         {/* Subtle glow effect */}
-        <div className="absolute inset-0 bg-gradient-to-br from-cyan-500/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-700" />
+        <div className="absolute inset-0 bg-gradient-to-br from-cyan-500/5 to-transparent opacity-0 group-hover/layer:opacity-100 transition-opacity duration-700" />
 
         <h3 className="text-sm md:text-base uppercase tracking-[0.3em] text-gray-500 mb-8 font-bold z-10">{title}</h3>
 
