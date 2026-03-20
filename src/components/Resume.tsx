@@ -168,6 +168,72 @@ const BlogItem = ({ title, description, link, tags, index }: { title: string, de
   </motion.a>
 );
 
+const CertificationItem = ({ 
+  title, 
+  issuer, 
+  date, 
+  credentialId, 
+  link, 
+  logo, 
+  index,
+  scale = 1.1 // Default slight scale to fill better
+}: { 
+  title: string, 
+  issuer?: string, 
+  date: string, 
+  credentialId: string, 
+  link: string, 
+  logo?: string, 
+  index: number,
+  scale?: number
+}) => (
+  <motion.div
+    initial={{ opacity: 0, scale: 0.9 }}
+    whileInView={{ opacity: 1, scale: 1 }}
+    viewport={{ once: true }}
+    transition={{ duration: 0.5, delay: index * 0.1 }}
+    className="group flex flex-col items-center"
+  >
+    <a 
+      href={link} 
+      target="_blank" 
+      rel="noopener noreferrer"
+      className="relative mb-8 cursor-pointer"
+    >
+      <div className="absolute inset-0 bg-cyan-500/10 blur-[50px] rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-700" />
+      
+      <div className="relative z-10 w-32 h-32 md:w-36 md:h-36 rounded-full flex items-center justify-center transition-all duration-500 group-hover:scale-110 shadow-[0_0_20px_rgba(0,0,0,0.5)] group-hover:shadow-[0_0_40px_rgba(34,211,238,0.5)] overflow-hidden bg-transparent">
+        {logo ? (
+          <img 
+            src={logo} 
+            alt={title} 
+            className="w-full h-full object-cover transition-transform duration-500" 
+            style={{ transform: `scale(${scale})` }}
+          />
+        ) : (
+          <div className="w-full h-full rounded-full bg-cyan-500/5 flex items-center justify-center border border-cyan-500/10">
+            <BookOpen className="w-12 h-12 text-cyan-400/20" />
+          </div>
+        )}
+      </div>
+
+      <div className="absolute -bottom-1 -right-1 w-11 h-11 rounded-full bg-black/80 backdrop-blur-md border border-white/10 flex items-center justify-center text-cyan-400 shadow-2xl scale-0 group-hover:scale-100 transition-all duration-300 z-20 hover:bg-cyan-500 hover:text-black hover:border-transparent">
+        <ExternalLink className="w-5 h-5" />
+      </div>
+    </a>
+
+    <div className="text-center px-4 max-w-[260px]">
+      <h4 className="text-lg md:text-xl font-bold text-white mb-2 group-hover:text-cyan-400 transition-colors leading-tight tracking-tight">{title}</h4>
+      <div className="flex flex-col gap-2 items-center">
+        <div className="px-3 py-0.5 rounded-full bg-white/5 border border-white/10 group-hover:border-cyan-500/30 transition-colors">
+          <span className="text-[10px] font-mono text-gray-400 group-hover:text-cyan-400/80 uppercase tracking-[0.2em]">{date}</span>
+        </div>
+        <span className="text-[9px] font-mono text-gray-600 tracking-wider opacity-60 group-hover:opacity-100 transition-opacity" title={credentialId}>{credentialId}</span>
+      </div>
+    </div>
+  </motion.div>
+);
+
 const ServiceCard = ({ title, description, tags, index }: { title: string, description: string, tags: string[], index: number }) => {
   const Icon = getTechIcon(tags[0]);
   return (
@@ -336,6 +402,72 @@ export const Resume = () => {
               description="Implementing a benchmarking framework using sysbench to evaluate database performance under different workloads on Amazon RDS, monitoring key metrics like latency and IOPS."
               link="https://medium.com/@amanlonare95/performance-testing-of-rds-mysql-database-using-sysbench-d95eca450fa7"
               tags={["Amazon RDS", "MySQL", "sysbench", "EC2", "CloudWatch"]}
+            />
+          </div>
+        </section>
+
+        {/* Certifications Section */}
+        <section id="certifications">
+          <div className="flex flex-col items-center text-center mb-20">
+            <h3 className="text-4xl md:text-5xl font-bold text-white mb-6 bg-clip-text text-transparent bg-gradient-to-b from-white to-white/40">Professional Certifications</h3>
+            <div className="h-1 w-24 bg-cyan-500 rounded-full mb-8" />
+            <p className="text-gray-400 max-w-2xl text-lg">Validated expertise in Cloud Infrastructure, Machine Learning, and Artificial Intelligence through industry-leading certifications.</p>
+          </div>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-y-20 gap-x-12">
+            <CertificationItem
+              index={0}
+              title="AWS Certified Machine Learning Engineer"
+              date="2026"
+              credentialId="UC-c7f98387-943f-41aa-8133-dc67f7b019e0"
+              logo="/logos/aws-ml-engineer-clean.png"
+              link="https://www.udemy.com/certificate/UC-c7f98387-943f-41aa-8133-dc67f7b019e0/" 
+              scale={1.3}
+            />
+            <CertificationItem
+              index={1}
+              title="AWS Certified Developer Associate"
+              date="2026"
+              credentialId="UC-127f861e-325f-4d42-bfb6-c3f03f081db6"
+              logo="/logos/aws-developer-clean.png"
+              link="https://www.udemy.com/certificate/UC-127f861e-325f-4d42-bfb6-c3f03f081db6/"
+              scale={1.1}
+            />
+            <CertificationItem
+              index={2}
+              title="Convolutional Neural Network"
+              date="May 2020"
+              credentialId="DGBA5HRZEC63"
+              logo="/logos/deeplearning-ai-clean.png"
+              link="https://www.coursera.org/account/accomplishments/verify/DGBA5HRZEC63"
+              scale={1.0}
+            />
+            <CertificationItem
+              index={3}
+              title="Structuring Machine Learning"
+              date="Nov 2019"
+              credentialId="PG6XFU4J7SCL"
+              logo="/logos/deeplearning-ai-clean.png"
+              link="https://www.coursera.org/account/accomplishments/verify/PG6XFU4J7SCL"
+              scale={1.0}
+            />
+            <CertificationItem
+              index={4}
+              title="Introduction to Tensorflow for AI"
+              date="Jul 2019"
+              credentialId="AXRH3VT6ACSQ"
+              logo="/logos/deeplearning-ai-clean.png"
+              link="https://www.coursera.org/account/accomplishments/verify/AXRH3VT6ACSQ"
+              scale={1.0}
+            />
+            <CertificationItem
+              index={5}
+              title="Neural Networks & Deep Learning"
+              date="Jul 2019"
+              credentialId="2WUB7KD6BBYN"
+              logo="/logos/deeplearning-ai-clean.png"
+              link="https://www.coursera.org/account/accomplishments/verify/2WUB7KD6BBYN"
+              scale={1.0}
             />
           </div>
         </section>
