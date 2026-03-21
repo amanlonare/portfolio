@@ -40,6 +40,15 @@ Developed an interactive Geospatial web portal for real-time agricultural monito
 1. Near Real Time Data Replication from MySQL to PostgreSQL: A deep dive into building a Change Data Capture (CDC) pipeline using Debezium, Kafka, and Docker for seamless, low-latency data replication between databases. (Link: https://medium.com/@amanlonare/near-real-time-data-replication-from-mysql-to-postgresql-ii-3c8d7a56cc8f)
 2. Performance Testing of RDS MySQL Database using sysbench: Implementing a benchmarking framework using sysbench to evaluate database performance under different workloads on Amazon RDS, monitoring key metrics like latency and IOPS. (Link: https://medium.com/@amanlonare/performance-testing-of-rds-mysql-database-using-sysbench-d95eca450fa7)
 
+# Professional Certifications
+1. AWS Certified Machine Learning Engineer (2026): Validated expertise in designing, building, and deploying ML models on AWS. (Credential ID: UC-c7f98387-943f-41aa-8133-dc67f7b019e0)
+2. AWS Certified Developer Associate (2026): Proficiency in developing and maintaining AWS-based applications. (Credential ID: UC-127f861e-325f-4d42-bfb6-c3f03f081db6)
+3. DeepLearning.AI Specializations:
+   - Convolutional Neural Networks (May 2020)
+   - Structuring Machine Learning Projects (Nov 2019)
+   - Introduction to TensorFlow for AI, Machine Learning, and Deep Learning (Jul 2019)
+   - Neural Networks and Deep Learning (Jul 2019)
+
 # Engineering Services
 1. Generative AI Solutions: End-to-end development of RAG systems, AI Agents, and custom LLM fine-tuning. Building intelligent assistants that understand your specific domain data.
 2. MLOps & Cloud Architecture: Designing scalable ML infrastructure on AWS. Automating model training, deployment, and monitoring pipelines for production-grade AI systems.

@@ -1,8 +1,9 @@
 import { TechStack } from "./TechStack";
-import { motion } from "motion/react";
-import { Github, Linkedin, Mail, MapPin, Download, Brain, Database, Mic, Settings, Layers, Server, Satellite, BarChart, Box, ExternalLink, FileText, Globe, BookOpen, Send, User, MessageSquare } from "lucide-react";
+import { motion, AnimatePresence } from "motion/react";
+import { Github, Linkedin, Mail, MapPin, Download, Brain, Database, Mic, Settings, Layers, Server, Satellite, BarChart, Box, ExternalLink, FileText, Globe, BookOpen, Send, User, MessageSquare, CheckCircle2, AlertCircle, Loader2 } from "lucide-react";
 import { SiLangchain, SiFlutter, SiFastapi, SiOpenai, SiMixpanel, SiApachekafka } from "react-icons/si";
 import { FaCogs, FaProjectDiagram, FaAws, FaMedium } from "react-icons/fa";
+import { useRef, useState } from "react";
 
 const SocialButton = ({ icon: Icon, href, label }: { icon: any, href: string, label: string }) => (
   <a
@@ -168,22 +169,22 @@ const BlogItem = ({ title, description, link, tags, index }: { title: string, de
   </motion.a>
 );
 
-const CertificationItem = ({ 
-  title, 
-  issuer, 
-  date, 
-  credentialId, 
-  link, 
-  logo, 
+const CertificationItem = ({
+  title,
+  issuer,
+  date,
+  credentialId,
+  link,
+  logo,
   index,
   scale = 1.1 // Default slight scale to fill better
-}: { 
-  title: string, 
-  issuer?: string, 
-  date: string, 
-  credentialId: string, 
-  link: string, 
-  logo?: string, 
+}: {
+  title: string,
+  issuer?: string,
+  date: string,
+  credentialId: string,
+  link: string,
+  logo?: string,
   index: number,
   scale?: number
 }) => (
@@ -194,20 +195,20 @@ const CertificationItem = ({
     transition={{ duration: 0.5, delay: index * 0.1 }}
     className="group flex flex-col items-center"
   >
-    <a 
-      href={link} 
-      target="_blank" 
+    <a
+      href={link}
+      target="_blank"
       rel="noopener noreferrer"
       className="relative mb-8 cursor-pointer"
     >
       <div className="absolute inset-0 bg-cyan-500/10 blur-[50px] rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-700" />
-      
+
       <div className="relative z-10 w-32 h-32 md:w-36 md:h-36 rounded-full flex items-center justify-center transition-all duration-500 group-hover:scale-110 shadow-[0_0_20px_rgba(0,0,0,0.5)] group-hover:shadow-[0_0_40px_rgba(34,211,238,0.5)] overflow-hidden bg-transparent">
         {logo ? (
-          <img 
-            src={logo} 
-            alt={title} 
-            className="w-full h-full object-cover transition-transform duration-500" 
+          <img
+            src={logo}
+            alt={title}
+            className="w-full h-full object-cover transition-transform duration-500"
             style={{ transform: `scale(${scale})` }}
           />
         ) : (
@@ -263,6 +264,39 @@ const ServiceCard = ({ title, description, tags, index }: { title: string, descr
 };
 
 export const Resume = () => {
+  const formRef = useRef<HTMLFormElement>(null);
+  const [status, setStatus] = useState<"idle" | "sending" | "success" | "error">("idle");
+
+  const sendEmail = async (e: React.FormEvent) => {
+    e.preventDefault();
+    if (!formRef.current) return;
+
+    setStatus("sending");
+
+    try {
+      const formData = new FormData(formRef.current);
+      const response = await fetch(`https://formspree.io/f/${import.meta.env.VITE_FORMSPREE_ID}`, {
+        method: 'POST',
+        body: formData,
+        headers: {
+          'Accept': 'application/json'
+        }
+      });
+
+      if (response.ok) {
+        setStatus("success");
+        formRef.current.reset();
+        setTimeout(() => setStatus("idle"), 5000);
+      } else {
+        throw new Error("Formspree Error");
+      }
+    } catch (error) {
+      console.error("Contact Form Error:", error);
+      setStatus("error");
+      setTimeout(() => setStatus("idle"), 5000);
+    }
+  };
+
   return (
     <div className="min-h-screen bg-[#050505] relative z-10 text-gray-200 selection:bg-cyan-500/30 selection:text-cyan-200">
 
@@ -408,10 +442,9 @@ export const Resume = () => {
 
         {/* Certifications Section */}
         <section id="certifications">
-          <div className="flex flex-col items-center text-center mb-20">
-            <h3 className="text-4xl md:text-5xl font-bold text-white mb-6 bg-clip-text text-transparent bg-gradient-to-b from-white to-white/40">Professional Certifications</h3>
-            <div className="h-1 w-24 bg-cyan-500 rounded-full mb-8" />
-            <p className="text-gray-400 max-w-2xl text-lg">Validated expertise in Cloud Infrastructure, Machine Learning, and Artificial Intelligence through industry-leading certifications.</p>
+          <div className="flex items-center gap-4 mb-20">
+            <h3 className="text-3xl font-bold text-white">Professional Certifications</h3>
+            <div className="h-px flex-1 bg-gradient-to-r from-cyan-500/50 to-transparent" />
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-y-20 gap-x-12">
@@ -421,7 +454,7 @@ export const Resume = () => {
               date="2026"
               credentialId="UC-c7f98387-943f-41aa-8133-dc67f7b019e0"
               logo="/logos/aws-ml-engineer-clean.png"
-              link="https://www.udemy.com/certificate/UC-c7f98387-943f-41aa-8133-dc67f7b019e0/" 
+              link="https://www.udemy.com/certificate/UC-c7f98387-943f-41aa-8133-dc67f7b019e0/"
               scale={1.3}
             />
             <CertificationItem
@@ -543,26 +576,41 @@ export const Resume = () => {
             </motion.div>
 
             <motion.form
+              ref={formRef}
+              onSubmit={sendEmail}
               initial={{ opacity: 0, x: 50 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.8 }}
-              className="space-y-6 p-8 rounded-2xl bg-white/5 border border-white/10"
-              onSubmit={(e) => e.preventDefault()}
+              className="space-y-6 p-8 rounded-2xl bg-white/5 border border-white/10 relative overflow-hidden"
             >
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                 <div className="space-y-2">
-                  <label htmlFor="name" className="text-sm font-bold text-gray-400 uppercase tracking-wider">Name</label>
+                  <label htmlFor="user_name" className="text-sm font-bold text-gray-400 uppercase tracking-wider">Name</label>
                   <div className="relative">
                     <User className="absolute left-4 top-1/2 -translate-y-1/2 w-4 h-4 text-gray-500" />
-                    <input type="text" id="name" className="w-full bg-black/20 border border-white/10 rounded-xl py-3.5 pl-12 pr-4 text-white focus:outline-none focus:border-cyan-500/50 focus:ring-1 focus:ring-cyan-500/50 transition-all" placeholder="Your Name" />
+                    <input
+                      type="text"
+                      id="user_name"
+                      name="user_name"
+                      required
+                      className="w-full bg-black/20 border border-white/10 rounded-xl py-3.5 pl-12 pr-4 text-white focus:outline-none focus:border-cyan-500/50 focus:ring-1 focus:ring-cyan-500/50 transition-all"
+                      placeholder="Your Name"
+                    />
                   </div>
                 </div>
                 <div className="space-y-2">
-                  <label htmlFor="email" className="text-sm font-bold text-gray-400 uppercase tracking-wider">Email</label>
+                  <label htmlFor="user_email" className="text-sm font-bold text-gray-400 uppercase tracking-wider">Email</label>
                   <div className="relative">
                     <Mail className="absolute left-4 top-1/2 -translate-y-1/2 w-4 h-4 text-gray-500" />
-                    <input type="email" id="email" className="w-full bg-black/20 border border-white/10 rounded-xl py-3.5 pl-12 pr-4 text-white focus:outline-none focus:border-cyan-500/50 focus:ring-1 focus:ring-cyan-500/50 transition-all" placeholder="email@address.com" />
+                    <input
+                      type="email"
+                      id="user_email"
+                      name="user_email"
+                      required
+                      className="w-full bg-black/20 border border-white/10 rounded-xl py-3.5 pl-12 pr-4 text-white focus:outline-none focus:border-cyan-500/50 focus:ring-1 focus:ring-cyan-500/50 transition-all"
+                      placeholder="email@address.com"
+                    />
                   </div>
                 </div>
               </div>
@@ -571,14 +619,58 @@ export const Resume = () => {
                 <label htmlFor="message" className="text-sm font-bold text-gray-400 uppercase tracking-wider">Message</label>
                 <div className="relative">
                   <MessageSquare className="absolute left-4 top-4 w-4 h-4 text-gray-500" />
-                  <textarea id="message" rows={4} className="w-full bg-black/20 border border-white/10 rounded-xl py-4 pl-12 pr-4 text-white focus:outline-none focus:border-cyan-500/50 focus:ring-1 focus:ring-cyan-500/50 transition-all resize-none" placeholder="How can I help you?"></textarea>
+                  <textarea
+                    id="message"
+                    name="message"
+                    required
+                    rows={4}
+                    className="w-full bg-black/20 border border-white/10 rounded-xl py-4 pl-12 pr-4 text-white focus:outline-none focus:border-cyan-500/50 focus:ring-1 focus:ring-cyan-500/50 transition-all resize-none"
+                    placeholder="How can I help you?"
+                  ></textarea>
                 </div>
               </div>
 
-              <button type="submit" className="w-full bg-cyan-500 hover:bg-cyan-400 text-black font-bold py-4 rounded-xl shadow-lg shadow-cyan-500/20 transition-all flex items-center justify-center gap-3 group active:scale-[0.98]">
-                <Send className="w-5 h-5 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
-                Send Message
-              </button>
+              <AnimatePresence mode="wait">
+                {status === "success" ? (
+                  <motion.div
+                    initial={{ opacity: 0, y: 10 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    exit={{ opacity: 0, y: -10 }}
+                    className="flex items-center gap-3 p-4 rounded-xl bg-green-500/10 border border-green-500/20 text-green-400"
+                  >
+                    <CheckCircle2 className="w-5 h-5" />
+                    <p className="text-sm font-medium">Message sent successfully! I'll get back to you soon.</p>
+                  </motion.div>
+                ) : status === "error" ? (
+                  <motion.div
+                    initial={{ opacity: 0, y: 10 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    exit={{ opacity: 0, y: -10 }}
+                    className="flex items-center gap-3 p-4 rounded-xl bg-red-500/10 border border-red-500/20 text-red-400"
+                  >
+                    <AlertCircle className="w-5 h-5" />
+                    <p className="text-sm font-medium">Failed to send message. Please try again or email directly.</p>
+                  </motion.div>
+                ) : (
+                  <button
+                    type="submit"
+                    disabled={status === "sending"}
+                    className="w-full bg-cyan-500 hover:bg-cyan-400 text-black font-bold py-4 rounded-xl shadow-lg shadow-cyan-500/20 transition-all flex items-center justify-center gap-3 group active:scale-[0.98] disabled:opacity-50 disabled:cursor-not-allowed"
+                  >
+                    {status === "sending" ? (
+                      <>
+                        <Loader2 className="w-5 h-5 animate-spin" />
+                        Sending...
+                      </>
+                    ) : (
+                      <>
+                        <Send className="w-5 h-5 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
+                        Send Message
+                      </>
+                    )}
+                  </button>
+                )}
+              </AnimatePresence>
             </motion.form>
           </div>
         </section>
