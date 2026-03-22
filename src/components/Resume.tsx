@@ -332,7 +332,7 @@ export const Resume = () => {
               role="AI Engineer (Founding Team)"
               company="MindYogi.me"
               link="mindyogi.me"
-              period="Dec 2025 – Present"
+              period="Dec 2025 – Jan 2026"
               description="Pioneering the development of advanced Agentic RAG systems for a wellness-focused platform, integrating self-reflective retrieval strategies to minimize hallucinations. Engineered a high-performance, low-latency Voice AI agent (<2s response time) using custom WebSocket protocols. Optimized vector search performance and retrieval accuracy on Pinecone through advanced semantic indexing and hybrid search techniques."
               tags={["RAG", "LangGraph", "Pinecone", "Voice AI", "FastAPI"]}
             />
@@ -341,8 +341,8 @@ export const Resume = () => {
               role="AI Engineer"
               company="Hypothesis AI"
               period="May 2025 – July 2025"
-              description="Designed and deployed a scalable multilingual AI Voice Agent specifically for E-commerce abandoned checkout recovery, resulting in a 90% increase in conversion rates. Built a robust event-driven integration framework using FastAPI to sync real-time data between Shopify and downstream analytics platforms like Mixpanel. Leveraged prompt engineering and context-window management to ensure highly personalized customer interactions."
-              tags={["OpenAI", "RAG", "FastAPI", "Mixpanel"]}
+              description="Designed and deployed a scalable multilingual AI Voice Agent for E-commerce abandoned checkout recovery, achieving a 90% increase in conversion rates. Built a robust event-driven integration framework using FastAPI to sync real-time data between Shopify and analytics platforms like Mixpanel."
+              tags={["OpenAI", "RAG", "FastAPI", "Mixpanel", "Shopify"]}
             />
             <ExperienceItem
               index={3}

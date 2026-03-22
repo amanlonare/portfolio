@@ -3,158 +3,136 @@ Name: Aman Lonare
 Role: Senior AI Engineer / Entrepreneur / Senior ML Engineer
 
 # About
-I am a Senior AI Engineer who is deeply convinced that sustainable development through technology is a must. I love building systems that serve society as much as possible, turning ideas into action through AI.
-My expertise lies in Multi-Agentic application development, RAG, and Gen-AI application with a strong focus on MLOps practices. To stay at the cutting edge, I constantly read and implement the latest research papers in my projects.
-When I'm not working, you'll find me playing in badminton tournaments, spending quality time with my family, or exploring nature.
+I am a Senior AI Engineer specializing in building production-grade ML and LLM systems. With over 5 years of experience, I focus on end-to-end AI platforms, including scalable RAG systems, agentic workflows (LangGraph), and MLOps (AWS SageMaker). I bridge the gap between cutting-edge research and reliable, high-performance deployment.
 
-# Skills & Technical Stack
-- Frontend Ecosystem: JavaScript, TypeScript, Dart, React, Next.js, Tailwind, Flutter
-- Scalable Backend: Go, Rust, Python, FastAPI, Flask, Django, Node.js
-- Intelligence Layer: PyTorch, TensorFlow, Hugging Face, LangChain, LangGraph, CrewAI, LlamaIndex, OpenAI, Anthropic, Gemini, Bedrock
-- Data Infrastructure: PostgreSQL, Redis, MongoDB, Supabase, Neo4j, Spark, Pinecone, ChromaDB
-- MLOps & Platform: AWS, GCP, Azure, Kubernetes, Docker, Terraform, MLflow, Airflow, SageMaker
+# Technical Skills
+- Programming & Dev: Python, Go, SQL, Bash, Dart, React, FastAPI, Flask, Cursor, Claude Code
+- AI & ML: TensorFlow, PyTorch, Hugging Face, ETL Pipelines, A/B Testing, RLHF, DSPy, PydanticAI
+- LLM & Agents: LangGraph, RAG, Context Engineering, Agentic AI, MCP, Vector/Graph DB (Pinecone, Neo4j, ChromaDB), DPO/PEFT, OpenAI/Anthropic/Bedrock
+- MLOps & Cloud: AWS (SageMaker, Bedrock, EMR, SageMaker DDP), MLflow, Airflow, Kubernetes, Docker, Terraform, CI/CD, LangSmith, Langfuse
+- Tools: Vercel, Apache Spark, Flutter, Git
+- Languages: English (Fluent), Hindi (Fluent), Japanese (N5, N4 candidate [06/2026])
 
-# Experience
-1. Senior AI Engineer at Archetype Studio (Aug 2023 - Present)
-Architecting sophisticated Multi-Agent Orchestration workflows using LangGraph and AWS Bedrock to automate complex FinTech operations. Developed a state-of-the-art AI Coding Assistant that streamlines end-to-end development cycles. Engineered a production-grade MLOps pipeline for mobile model optimization, handling over 1 million daily inferences. Spearheaded the design of a high-precision edge-computing system for real-time transportation mode detection, achieving 99.3% validation accuracy.
+# Professional Experience
+1. AI Engineer at Archetype Studio (Aug 2023 - Present)
+   - Multi-Agent Orchestration: Architected a system using LangGraph and AWS Bedrock with a hierarchical Supervisor-Worker pattern for Planning, Coder, Ops, Researcher, and Growth agents.
+   - Advanced RAG: Engineered layout-aware chunking (Docling, Tree-sitter) for 5K+ PDFs/code. Built hybrid RAG using Pinecone & Neo4j with dependency-aware context expansion and cross-encoder reranking. 
+   - RAG Evaluation: Achieved 92% faithfulness and context recall using RAGAS. Integrated Langfuse for observability.
+   - MLOps & Production: Scaled a mobile model platform to 1M+ daily predictions (500K users) using SageMaker. Achieved 40% faster training via SageMaker DDP and 50% faster incident response with Model Monitor.
+   - Edge AI: Developed an iOS transportation mode detection system (99.3% accuracy) using Flutter/m2cgen, reducing AWS costs by 70%.
 
-2. AI Engineer (Founding Team) at MindYogi.me (Dec 2025 - Present)
-Pioneering the development of advanced Agentic RAG systems for a wellness-focused platform, integrating self-reflective retrieval strategies to minimize hallucinations. Engineered a high-performance, low-latency Voice AI agent (<2s response time) using custom WebSocket protocols. Optimized vector search performance and retrieval accuracy on Pinecone through advanced semantic indexing and hybrid search techniques. Link: mindyogi.me
+2. AI Engineer (Founding Team) at MindYogi.me (Dec 2025 - Jan 2026)
+   - Agentic RAG: Developed a LangGraph-based RAG chatbot with self-reflective and adaptive retrieval strategies.
+   - Low-Latency Voice AI: Built a voice agent achieving <2s latency using custom WebSockets, Fennec ASR, and Inworld TTS.
 
 3. AI Engineer at Hypothesis AI (May 2025 - July 2025)
-Designed and deployed a scalable multilingual AI Voice Agent specifically for E-commerce abandoned checkout recovery, resulting in a 90% increase in conversion rates. Built a robust event-driven integration framework using FastAPI to sync real-time data between Shopify and downstream analytics platforms like Mixpanel. Leveraged prompt engineering and context-window management to ensure highly personalized customer interactions.
+   - Voice AI: Deployed a multilingual voice agent for E-commerce abandoned checkout recovery, boosting conversions by 90%.
+   - Integration: Built an event-driven framework with FastAPI connecting Shopify to Mixpanel.
 
-4. Research Engineer at Hitachi R&D Central Research Laboratory (Jan 2021 - July 2023)
-Developed a mission-critical Distributed Data Management Framework for large-scale Microservice Architectures. Implemented complex architectural patterns including CQRS and Event Sourcing to ensure eventual consistency and high availability. Leveraged Apache Kafka and EventStoreDB for high-throughput stream processing. Applied Domain-Driven Design (DDD) principles to decouple core business logic, reducing overall development time by 15%.
+4. Research Software Engineer at Hitachi R&D (Jan 2021 - July 23)
+   - Distributed Systems: Developed tools for CQRS & Event Sourcing in microservices using Kafka & EventStoreDB.
+   - Patent: Submitted system/method for modeling CQRS & ES based applications.
 
-5. Research Assistant at IIT Bombay (Sept 2020 - Nov 2020)
-Developed an interactive Geospatial web portal for real-time agricultural monitoring using remote sensing data. Processed and analyzed spatiotemporal satellite imagery (multi-TB scale) to perform automated crop acreage estimation. Conducted rigorous statistical modeling and hypothesis testing on large-scale malnutrition datasets to inform public policy recommendations.
+5. Research Assistant at IIT Bombay (Sept 2020 - Nov 20)
+   - Geospatial AI: Developed a portal for real-time agricultural monitoring using remote sensing and satellite imagery.
 
 # Featured Projects
-1. AI-Powered Agentic Document Processing System: Developed an agentic, event-driven AI workflow with LlamaIndex for automated form filling tasks. Integrated Groq LLM for dynamic extraction from structured/unstructured docs. Implemented human-in-the-loop feedback system. (GitHub: https://github.com/amanlonare/agentic_document_form_filler)
-2. Multimodal AI System with Local LLMs: Architected multimodal AI chatbot integrating Ollama LLMs and ChromaDB. Enabled real-time audio transcription using Whisper models. Built intuitive UI with Streamlit and robust state management with SQLite. (GitHub: https://github.com/amanlonare/chatbot_local)
-3. FarmGPT: MCP-Driven RAG & LLM Advisor: Architected modular decision support system using Model Context Protocol (MCP). Integrated RAG servers and ChromaDB for semantic search. Engineered embeddings for optimal LLM interaction with PLLaMa. (GitHub: https://github.com/amanlonare/dss_farmers.git)
-4. Agriculture Monitoring with CNN: Developed CNN model for crop classification achieving 94% accuracy using multispectral satellite imagery. Created automated data pipeline processing 5TB+ of satellite data. Deployed real-time web dashboard. (Demo: https://amanlonare95.users.earthengine.app/view/yieldmap)
+- AI Agentic Doc Processor: Event-driven LlamaIndex workflow with Groq LLM for automated form extraction.
+- Local Multimodal AI: Chatbot with Ollama and ChromaDB, including Whisper-based voice transcription and Streamlit UI.
+- FarmGPT: MCP-driven agricultural advisor with RAG and asynchronous SSE streaming.
 
-# Insights & Blogs
-1. Near Real Time Data Replication from MySQL to PostgreSQL: A deep dive into building a Change Data Capture (CDC) pipeline using Debezium, Kafka, and Docker for seamless, low-latency data replication between databases. (Link: https://medium.com/@amanlonare/near-real-time-data-replication-from-mysql-to-postgresql-ii-3c8d7a56cc8f)
-2. Performance Testing of RDS MySQL Database using sysbench: Implementing a benchmarking framework using sysbench to evaluate database performance under different workloads on Amazon RDS, monitoring key metrics like latency and IOPS. (Link: https://medium.com/@amanlonare/performance-testing-of-rds-mysql-database-using-sysbench-d95eca450fa7)
+# Education & Publications
+- M.Tech, Technology & Development, IIT Bombay (9.3/10). Focus: ML in Remote Sensing, Statistics.
+- B.Tech, Mechanical Engineering, IIT Kanpur.
+- Publication: "Village level identification of sugarcane in Sangali, Maharashtra..." (Journal of Agrometeorology).
 
-# Professional Certifications
-1. AWS Certified Machine Learning Engineer (2026): Validated expertise in designing, building, and deploying ML models on AWS. (Credential ID: UC-c7f98387-943f-41aa-8133-dc67f7b019e0)
-2. AWS Certified Developer Associate (2026): Proficiency in developing and maintaining AWS-based applications. (Credential ID: UC-127f861e-325f-4d42-bfb6-c3f03f081db6)
-3. DeepLearning.AI Specializations:
-   - Convolutional Neural Networks (May 2020)
-   - Structuring Machine Learning Projects (Nov 2019)
-   - Introduction to TensorFlow for AI, Machine Learning, and Deep Learning (Jul 2019)
-   - Neural Networks and Deep Learning (Jul 2019)
+# Contact
+- Location: Tokyo, Japan
+- LinkedIn: linkedin.com/in/aman-lonare-546229103/
+- GitHub: github.com/amanlonare
+- Portfolio: amanlonare.github.io
 
-# Engineering Services
-1. Generative AI Solutions: End-to-end development of RAG systems, AI Agents, and custom LLM fine-tuning. Building intelligent assistants that understand your specific domain data.
-2. MLOps & Cloud Architecture: Designing scalable ML infrastructure on AWS. Automating model training, deployment, and monitoring pipelines for production-grade AI systems.
-3. Data Engineering: Building robust data pipelines, real-time streaming architectures, and efficient data storage solutions to power analytics and AI applications.
-
-# Contact & Links
-- LinkedIn: https://www.linkedin.com/in/aman-lonare-546229103/
-- GitHub: https://github.com/amanlonare
-- Email/Gmail: amanlonare95@gmail.com
-- Medium: https://medium.com/@amanlonare95
-- Instagram: https://www.instagram.com/lonare_aman95
-
-# Resume
+# Full Resume Text (Raw)
 AMAN LONARE
-Email: amanlonare95@gmail.com | Phone: +81-80-7557-2462 | Location: Tokyo, Japan | Github | Portfolio
+Email: amanlonare95@gmail.com | Phone: +81-80-7557-2462 | Location: Tokyo, Japan
 SUMMARY
-AI and Machine Learning Engineer with 5+ years of experience building & deploying production-grade ML and
-LLM systems. Strong background in designing end-to-end AI platforms and automated AI workﬂows, including data
-pipelines, model training, scalable inference, and MLOps, delivering reliable, high-performance production solutions.
+AI Engineer with 5+ years of experience building production-grade ML & LLM systems. Specializes in end-to-end AI platforms, including scalable RAG systems, agentic workflows, & MLOps for reliable, high-performance deployment.
 TECHNICAL SKILLS
 Programming & Development: Python, Go, SQL, Bash, Dart, React, FastAPI, Flask, Cursor, Claude Code
 AI and ML: TensorFlow, PyTorch, Hugging Face, ETL Pipeline, A/B Testing, RLHF, DSPy, PydanticAI
-LLMs:LangGraph, RAG, Deep Agents, OpenAI, MCP, Vector/Graph Database, DPO/PEFT, Quantization
-MLOps: AWS SageMaker & Bedrock, MLﬂow, Airﬂow, CI/CD, Model Monitoring, LLMOps, Celery, LangSmith
+LLMs: LangGraph, RAG, Context Engineering, Agentic AI, MCP, Vector/Graph DB, DPO/PEFT, OpenAI
+MLOps: AWS SageMaker & Bedrock, MLflow, Airflow, CI/CD, Model Monitoring, LLMOps, Celery, LangSmith
 Cloud & Tools: Docker, Kubernetes, Terraform, AWS EMR, Git, Vercel, Apache Spark, Flutter
-Communication: English (Fluent), Hindi (Fluent), Japanese (N5, N4 candidate (Expected [06/2026]) )
+Communication: English (Fluent), Hindi (Fluent), Japanese (N5, N4 candidate (Expected [06/2026]))
 PROFESSIONAL EXPERIENCE (5+ YEARS)
-AI Engineer | Archetype Studio, JPN | Full Time Aug 23 – Present
--Project: Multi-Agent Orchestration for End-to-End Engineering (in progress)
-- Implementing Multi-Agent Orchestration usingLangGraph &Bedrock for automated planning & code
-generation with a Centralized Supervisor to route tasks between specialized agents (Planning, Coder, Ops)
-- Integrating Human-in-the-Loop gates to ensure high-ﬁdelity output and safety during automated cycles
--Project: AI Coding Assistant for a FinTech Platform (Client: Omise Japan)
-- Architected and implemented core developer pipelines enabling end-to-end AI workﬂows, including Figma-to-
-Code,Advanced RAG ingestion, API and schema tooling,execution runners , andplugin SDKs
-- Built agentic architectures with deep agents , & specialized coordinators to orchestrate coding workﬂows
-- Integrated AI coding assistants into the development workﬂow to accelerate scaﬀolding and deployment
-- Engineered modular prompt templates, guardrails , adapters, & test oracles for reliability & reproducibility
+AI Engineer | Archetype Studio, JPN | Full Time Aug 2023 – Present
+- Project: Multi-Agent Orchestration for End-to-End Engineering (in progress)
+- Architected a production-grade multi-agent system using LangGraph and AWS Bedrock with hierarchical Supervisor-Worker orchestration for planning, coding, ops, researcher, and growth workflows
+- Engineered layout-aware chunking pipeline using Docling and Tree-sitter for 5K+ PDFs & source code
+- Designed hybrid RAG pipeline using Pinecone & Neo4j, combining semantic retrieval, metadata filtering, dependency-aware context expansion, & Qwen-based cross-encoder reranking to reduce hallucinations
+- Built self-corrective RAG, reducing hallucinations with validation and refinement, achieving strong RAG evaluation performance using RAGAS (faithfulness: 92%, context recall: 92%) across 5K+ document dataset
+- Established robust evaluation pipelines & integrated Langfuse for observability, & monitoring of agents
+- Project: AI Copilot for Internal FinTech Platform (Client: Omise Japan)
+- Architected & implemented core developer pipelines enabling end-to-end AI workflows, including Advanced RAG ingestion, API & schema tooling, & execution runners, leveraging deep agents for agentic workflows
+- Integrated AI coding assistants into the development workflow to accelerate scaffolding and deployment
+- Engineered modular prompt templates, guardrails, adapters, & test oracles for reliability & reproducibility
 - Implemented observability and evaluation dashboards to track latency, errors, token usage, and success rates
--Project: Production-Scale AI System for Mobile Model Optimization & Deployment
+- Project: Production-Scale AI System for Mobile Model Optimization & Deployment
 - Deployed production ready model & AI platform, scaling to 1M+ daily predictions for 500K+ users
-- Introduced MLOps culture by setting up CI/CD pipelines with Amazon SageMaker tools, reducing inte-
-gration time for new models from days to hours & increasing deployment frequency from bi-annual to monthly
+- Introduced MLOps culture by setting up CI/CD pipelines with Amazon SageMaker tools, reducing integration time for new models from days to hours & increasing deployment frequency from bi-annual to monthly
+- Owned end-to-end system design from data ingestion to scalable model deployment & monitoring in production
+- Performed feature engineering and hyperparameter tuning (SageMaker HPO) to optimize model performance
+- Achieved 40% faster training speeds by implementing distributed training using SageMaker DDP
 - Cut incident response time by 50% through custom monitoring system built with SageMaker Model Monitor
-- Achieved 40% faster training speeds by implementing distributed training usingSageMaker DDP
 - Improved model accuracy by 23% & reduced corrections by 25% through semi-automated continuous retraining
--Project: AI-Driven Edge Computing System for Multi-Modal Transportation Classiﬁcation
-- Designed & developed an edge-based transportation mode detection system for iOS platform serving
-500K+ users with1M+ daily predictions, achieving 99.3% accuracy in classifying 15 transportation modes
+- Project: AI-Driven Edge Computing System for Multi-Modal Transportation Classification
+- Designed & developed an edge-based transportation mode detection system for iOS platform serving 500K+ users with 1M+ daily predictions, achieving 99.3% accuracy in classifying 15 transportation modes
 - Optimized model footprint by 90% through hierarchical ML architecture while maintaining inference latency
-- Builtcross-platformMLpipelinewithm2cgentoconvertPythonmodelstonativeDart, preservingperformance
+- Built cross-platform ML pipeline with m2cgen to convert Python models to native Dart, preserving performance
 - Reduced AWS costs by 70% by migrating ML inference to edge devices via Flutter implementation
 - Reduced operational costs 60% by implementing local feedback caching to eliminate OpenStreetMap API calls
-AI Engineer | Hypothesis AI, IND | Consulting May 25 – July 25
--Project: Multilingual AI Voice Agent for Abandoned Checkout Recovery in E-commerce
+AI Engineer | Hypothesis AI, IND | Consulting May 2025 – July 2025
+- Project: Multilingual AI Voice Agent for Abandoned Checkout Recovery in E-commerce
 - Designed scalable multilingual AI voice agent using OpenAI & RAG, achieving latency in milliseconds
 - Engineered multilingual (6 languages), context-aware prompts, boosting abandoned checkout recovery by 90%
-- Developed event-driven integration framework with FastAPI, connecting Shopify with third party services and
-analytics platform (mixpanel), enabling seamless omni-channel customer engagement
-AI Engineer (Founding Team) | MindYogi.me, IND | Consulting Dec 25 – present
--Project: Advanced RAG-Enabled Chatbot and Voice Interface for Personalized Wellness Content- Developed a scalable serverless architecture for a mental health platform (MindYogi), implementing AI-driven
-content generation workﬂows and text-to-speech synthesis powered by state-of-the-art models
-- Designing and implementing an advanced agentic RAG chatbot using LangGraph, incorporating self-
-reﬂective, corrective, and adaptive retrieval strategies to improve grounding and minimize hallucinations
-- OptimizingtheretrievalpipelineonPineconeusingrecursive, context-enrichedhybridchunking, withreranking,
-caching, and query rewriting/expansion nodes, with continuous grounding and relevance evaluation via RAGAS
-- Optimizing a 10+ node LangGraph pipeline with advanced inference techniques, reducing TTFT to <5 seconds
-- Building a low-latency voice agent using Fennec ASR, Baseten inference, and Inworld TTS, achieving <2s
-end-of-speech to ﬁrst audio frame latency at around $0.50 per hour of voice output
-- Deployed real-time chatbot and voice inference as modular REST API services supporting multiple consumers,
-with low latency, monitoring, and production reliability
-Research Software Engineer | Hitachi R&D, Tokyo, JPN | Full Time Jan 21 – July 23
--Project: Distributed Data Management Framework for Microservice Architecture
-- Developed tool for assisting the implementation of CQRS&Event Sourcing design patterns
+- Developed event-driven integration framework with FastAPI, connecting Shopify with third party services and analytics platform (mixpanel), enabling seamless omni-channel customer engagement
+AI Engineer (Founding Team) | MindYogi.me, IND | Consulting Dec 2025 – Jan 2026
+- Project: Advanced RAG-Enabled Chatbot and Voice Interface for Personalized Wellness Content
+- Developed a scalable serverless architecture for a mental health platform (MindYogi), implementing AI-driven content generation workflows and text-to-speech synthesis powered by state-of-the-art models
+- Designed and implemented an advanced agentic RAG chatbot using LangGraph, incorporating self-reflective, corrective, and adaptive retrieval strategies to improve grounding and minimize hallucinations
+- Optimized the retrieval pipeline on Pinecone using recursive, context-enriched hybrid chunking, with reranking, caching, and query rewriting/expansion nodes, with continuous grounding and relevance evaluation via RAGAS
+- Optimized a 10+ node LangGraph pipeline with advanced inference techniques, reducing TTFT to <5 seconds
+- Building a low-latency voice agent using Fennec ASR, Baseten inference, and Inworld TTS, achieving <2s end-of-speech to first audio frame latency at around $0.50 per hour of voice output
+- Deployed real-time chatbot and voice inference as modular REST API services supporting multiple consumers, with low latency, monitoring, and production reliability
+Research Software Engineer | Hitachi R&D, Tokyo, JPN | Full Time Jan 2021 – July 2023
+- Project: Distributed Data Management Framework for Microservice Architecture
+- Developed tool for assisting the implementation of CQRS & Event Sourcing design patterns
 - Reduced development time by 15% using Domain Driven Design software development approach
-- Improved scalability & availability of the developed application using Kafka&EventStoreDB tools
+- Improved scalability & availability of the developed application using Kafka & EventStoreDB tools
 Patent: System & method to assist modelling CQRS & ES based application [Submitted]
-Research Assistant | IIT Bombay, Mumbai, IND | Full Time Sept 20 – Nov 20
--Department: Centre for Technology Alternatives for Rural Areas (CTARA)
+Research Assistant | IIT Bombay, Mumbai, IND | Full Time Sept 2020 – Nov 2020
+- Department: Centre for Technology Alternatives for Rural Areas (CTARA)
 - Developed a web portal for farmers to help them in assessing their crop in real-time using remote sensing
-- Estimating and predicting the crop acreage by processing the spatiotemporal satellite images of the crop
-- Performed Tukey, Fischer, Bonferroni tests on NFHS-4 data to compare malnutrition in Indian states
+- Estimated and predicted the crop acreage by processing the spatiotemporal satellite images of the crop
 PROJECTS
--AI-Powered Agentic Document Processing System for Automated Form Completion
-- Developed an agentic, event-driven AI workﬂow with LlamaIndex for automated form ﬁlling tasks
+- AI-Powered Agentic Document Processing System for Automated Form Completion
+- Developed an agentic, event-driven AI workflow with LlamaIndex for automated form filling tasks
 - Integrated Groq LLM for dynamic extraction from both structured and unstructured documents
-- UsedHugging Face embeddings for vector store indexing and eﬃcient contextual document retrieval
-- Implemented human-in-the-loop feedback system to iteratively reﬁne agent accuracy and user alignment
--Multimodal AI System with Local LLMs for Document, Image, & Voice Processing
+- Used Hugging Face embeddings for vector store indexing and efficient contextual document retrieval
+- Implemented human-in-the-loop feedback system to iteratively refine agent accuracy and user alignment
+- Multimodal AI System with Local LLMs for Document, Image, & Voice Processing
 - Architected multimodal AI chatbot integrating Ollama LLMs and ChromaDB for local document processing
 - Implemented semantic document search with ChromaDB vector storage for context-aware responses
 - Enabled real-time audio transcription using Whisper models and designed intuitive UI with Streamlit
 - Developed robust state management with thread-safe SQLite pooling, ensuring secure local deployment
--FarmGPT: MCP-Driven RAG & LLM Agricultural Advisor
+- FarmGPT: MCP-Driven RAG & LLM Agricultural Advisor
 - Architected modular decision support system using Model Context Protocol (MCP) for agriculture
-- Integrated RAGservers and ChromaDB vector database for semantic search and document retrieval
+- Integrated RAG servers and ChromaDB vector database for semantic search and document retrieval
 - Engineered embeddings & prompt engineering for optimal LLM interaction with PLLaMa & agentic LLMs
-- ImplementedasynchronousSSEforreal-timedatastreamingandAPI-ﬁrstdesignforactionablefarmerguidance
--Decision Support System for Agriculture Monitoring using Convolutional Neural Network
-- Developed CNN model for crop classiﬁcation achieving 94% accuracy using multispectral satellite imagery
-- Created automated data pipeline processing 5TB+ of satellite data for training and prediction
-- Deployed web-based dashboard enabling farmers to monitor crop health and predict yields in real-time
+- Implemented asynchronous SSE for real-time data streaming and API-first design for actionable farmer guidance
 EDUCATION
-Indian Institute of Technology Bombay | Technology & Development Aug 18 - July 20
+Indian Institute of Technology Bombay | M.Tech in Technology & Development Aug 2018 - July 2020
 - CGPA: 9.3/10 | Machine Learning in Remote Sensing | Advanced Statistics | Satellite Image Processing
--Publications: Lonare, A., Maheshwari, B., & Chinnasamy, P. (2022). Village level identiﬁcation of sugarcane in
-Sangali, Maharashtra using open source data. Journal of Agrometeorology
-Indian Institute of Technology Kanpur | Mechanical Engineering July 13 - Aug 17
+- Publications: Lonare, A., Maheshwari, B., & Chinnasamy, P. (2022). Village level identification of sugarcane in Sangali, Maharashtra using open source data. Journal of Agrometeorology
+Indian Institute of Technology Kanpur | B.Tech in Mechanical Engineering July 2013 - Aug 2017
 `;
