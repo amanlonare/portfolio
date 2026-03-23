@@ -1,13 +1,13 @@
-import unittest
-from unittest.mock import patch
+import { handleReviewClick } from '../src/components/Resume';
 
-class TestReviewButton(unittest.TestCase):
-    @patch('webbrowser.open')  # Mock the webbrowser.open method
-    def test_handle_review_click(self, mock_open):
-        # Simulate the button click
-        handle_review_click()
-        # Check if the correct URL was opened
-        mock_open.assert_called_once_with('https://example.com/review')
+describe('Review Button', () => {
+  test('handleReviewClick opens the review link', () => {
+    // Mock window.open to test the link opening
+    const mockOpen = jest.fn();
+    window.open = mockOpen;
 
-if __name__ == '__main__':
-    unittest.main()
+    handleReviewClick();
+
+    expect(mockOpen).toHaveBeenCalledWith('https://your-review-link.com', '_blank');
+  });
+});
