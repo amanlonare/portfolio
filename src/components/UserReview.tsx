@@ -3,26 +3,22 @@ import React, { useState } from 'react';
 const UserReview = () => {
     const [review, setReview] = useState('');
 
-    const handleSubmit = (e: React.FormEvent) => {
+    const handleSubmit = (e) => {
         e.preventDefault();
-        // Handle the review submission logic here
         console.log('User Review Submitted:', review);
-        setReview(''); // Clear the input after submission
+        // Here you can add logic to send the review to a server or API
     };
 
     return (
-        <div>
-            <h2>User Review</h2>
-            <form onSubmit={handleSubmit}>
-                <textarea
-                    value={review}
-                    onChange={(e) => setReview(e.target.value)}
-                    placeholder="Write your review here..."
-                    required
-                />
-                <button type="submit">Submit</button>
-            </form>
-        </div>
+        <form onSubmit={handleSubmit}>
+            <textarea
+                value={review}
+                onChange={(e) => setReview(e.target.value)}
+                placeholder="Write your review here..."
+                required
+            />
+            <button type="submit">Submit Review</button>
+        </form>
     );
 };
 
