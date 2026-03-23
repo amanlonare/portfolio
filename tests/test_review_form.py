@@ -6,7 +6,7 @@ sys.path.insert(0, '.')
 sys.modules['react'] = MagicMock()
 
 # Step 2: NOW import implementation using ABSOLUTE path
-from src.components.ReviewForm import ReviewForm
+from components.ReviewForm import ReviewForm
 
 # Step 3: STRUCTURAL VERIFICATION 
 assert ReviewForm is not None
