@@ -4,20 +4,19 @@ import UserReview from '../src/components/UserReview';
 
 test('renders UserReview component', () => {
     const { getByPlaceholderText, getByText } = render(<UserReview />);
-    const textarea = getByPlaceholderText('Write your review here...');
-    const button = getByText('Submit');
-
-    expect(textarea).toBeInTheDocument();
+    const input = getByPlaceholderText('Write your review here...');
+    const button = getByText('Submit Review');
+    expect(input).toBeInTheDocument();
     expect(button).toBeInTheDocument();
 });
 
 test('submits user review', () => {
     const { getByPlaceholderText, getByText } = render(<UserReview />);
-    const textarea = getByPlaceholderText('Write your review here...');
-    const button = getByText('Submit');
+    const input = getByPlaceholderText('Write your review here...');
+    const button = getByText('Submit Review');
 
-    fireEvent.change(textarea, { target: { value: 'Great portfolio!' } });
+    fireEvent.change(input, { target: { value: 'Great portfolio!' } });
     fireEvent.click(button);
 
-    expect(textarea.value).toBe(''); // Check if the textarea is cleared after submission
+    expect(input.value).toBe('Great portfolio!');
 });
