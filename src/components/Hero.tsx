@@ -80,6 +80,12 @@ export default function Hero() {
                     >
                         View Resume <ExternalLink className="h-5 w-5" />
                     </a>
+                    <a
+                        href="#review"
+                        className="mt-4 px-10 py-4 bg-[#ffcc00] text-[#050505] font-bold rounded-xl flex items-center justify-center gap-2 hover:shadow-[0_0_25px_rgba(255,204,0,0.7)] transition-all hover:-translate-y-1 cursor-pointer"
+                    >
+                        Review <ExternalLink className="h-5 w-5" />
+                    </a>
                 </div>
             </div>
         </section>
