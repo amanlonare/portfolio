@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
 
-const ReviewForm = () => {
+const ReviewForm: React.FC = () => {
     const [review, setReview] = useState('');
 
-    const handleSubmit = (e) => {
+    const handleSubmit = (e: React.FormEvent) => {
         e.preventDefault();
         // Handle review submission logic here
         console.log('Review submitted:', review);
