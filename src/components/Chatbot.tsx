@@ -1,6 +1,7 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { MessageSquare, X, Send, Bot, User, Sparkles } from 'lucide-react';
+import ReviewButton from './ReviewButton'; // Importing the ReviewButton component
 
 interface Message {
     id: string;
@@ -245,6 +246,7 @@ export default function Chatbot() {
                                 <div className="w-1.5 h-1.5 bg-cyan-500 rounded-full animate-pulse"></div>
                                 <span className="text-[9px] text-cyan-400 font-mono tracking-widest uppercase">Secured AI Channel</span>
                             </div>
+                            <ReviewButton /> {/* Adding the Review Button here */}
                         </div>
                     </motion.div>
                 )}
