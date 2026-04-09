@@ -1,16 +1,18 @@
 export const portfolioData = {
   name: "Monu Kumari",
+  title: "UX/UI Designer",
   roles: [
     "UI Designer",
     "UX Researcher",
-    "Graphic Designer"
+    "UX Strategist"
   ],
   socials: {
-    github: "https://github.com/amanlonare",
-    linkedin: "https://www.linkedin.com/in/aman-lonare-546229103/",
-    medium: "https://medium.com/@amanlonare95",
-    instagram: "https://www.instagram.com/lonare_aman95"
+    behance: "https://www.behance.net/monuverma",
+    linkedin: "https://www.linkedin.com/in/monu-kumari-136185195/",
+    resume: "https://drive.google.com/file/d/1kRPmBz0W0izyEo_-HhzkBruttAou4wov/view?usp=sharing"
   },
-  profilePicture: "/amanlonare.jpeg",
-  about: "I am a Senior AI Engineer who is deeply convinced that sustainable development through technology is a must. I love building systems that serve society as much as possible, turning ideas into action through AI.\n\nMy expertise lies in Multi-Agentic application development, RAG, and Gen-AI application with a strong focus on MLOps practices. To stay at the cutting edge, I constantly read and implement the latest research papers in my projects.\n\nWhen I'm not working, you'll find me playing in badminton tournaments, spending quality time with my family, or exploring nature."
+  profilePicture: "/monu_profile.png",
+  aboutHeading: "Designing Intuitive and Impactful Digital Products.",
+  about: "Product Designer with 3 years of experience building intuitive, data-driven, and user-focused digital products, including AI-driven solutions. Passionate about simplifying complex workflows and creating meaningful experiences that enhance user satisfaction and product value.",
+  aboutQuote: "Designing AI-driven, user-centered experiences that transform complex technologies into intuitive and engaging digital products."
 };

@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react';
 import Typed from 'typed.js';
-import { Github, Linkedin, Instagram, ExternalLink } from 'lucide-react';
-import { FaMedium } from 'react-icons/fa';
+import { Linkedin, ExternalLink } from 'lucide-react';
+import { FaBehance, FaProjectDiagram } from 'react-icons/fa';
 import ThreeCanvas from './ThreeCanvas';
 import { portfolioData } from '../data/portfolioData';
 
@@ -37,16 +37,14 @@ export default function Hero() {
                     <span ref={el}></span>
                 </div>
 
-                <p className="text-sm md:text-lg text-gray-400 mb-8 md:mb-6 max-w-lg mx-auto leading-relaxed px-4">
-                    Bridging the gap between cutting-edge AI research<br className="hidden md:block" /> and production-grade software engineering.
+                <p className="text-sm md:text-lg text-gray-400 mb-8 md:mb-6 max-w-2xl mx-auto leading-relaxed px-4">
+                    Designing purposeful, human-centered, and AI-driven experiences<br className="hidden md:block" /> that help startups and brands build engaging digital products.
                 </p>
 
                 <div className="flex justify-center mb-10 md:mb-6 gap-4 md:gap-5">
                     {[
-                        { icon: Github, href: portfolioData.socials.github },
+                        { icon: FaBehance, href: portfolioData.socials.behance },
                         { icon: Linkedin, href: portfolioData.socials.linkedin },
-                        { icon: FaMedium, href: portfolioData.socials.medium },
-                        { icon: Instagram, href: portfolioData.socials.instagram },
                     ].map((social, index) => (
                         <a
                             key={index}
@@ -71,12 +69,18 @@ export default function Hero() {
                     ))}
                 </div>
 
-                <div className="flex flex-col items-center">
+                <div className="flex flex-col md:flex-row items-center justify-center gap-4">
                     <a
-                        href="/Resume_Aman_Lonare.pdf"
+                        href="#projects"
+                        className="px-10 py-4 border border-[#00f2ff] text-[#00f2ff] font-bold rounded-xl flex items-center justify-center gap-2 hover:bg-[#00f2ff]/10 transition-all hover:-translate-y-1 cursor-pointer w-full md:w-auto"
+                    >
+                        View Projects <FaProjectDiagram className="h-5 w-5" />
+                    </a>
+                    <a
+                        href={portfolioData.socials.resume}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="px-10 py-4 bg-[#00f2ff] text-[#050505] font-bold rounded-xl flex items-center justify-center gap-2 hover:shadow-[0_0_25px_rgba(0,242,255,0.7)] transition-all hover:-translate-y-1 cursor-pointer"
+                        className="px-10 py-4 bg-[#00f2ff] text-[#050505] font-bold rounded-xl flex items-center justify-center gap-2 hover:shadow-[0_0_25px_rgba(0,242,255,0.7)] transition-all hover:-translate-y-1 cursor-pointer w-full md:w-auto"
                     >
                         View Resume <ExternalLink className="h-5 w-5" />
                     </a>

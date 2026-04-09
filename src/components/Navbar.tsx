@@ -14,12 +14,10 @@ export default function Navbar() {
     }, []);
 
     const navLinks = [
+        { name: 'Projects', href: '#projects' },
         { name: 'About', href: '#about' },
         { name: 'Skills', href: '#skills' },
         { name: 'Experience', href: '#experience' },
-        { name: 'Projects', href: '#projects' },
-        { name: 'Blogs', href: '#blog' },
-        { name: 'Services', href: '#services' },
         { name: 'Contact', href: '#contact' },
     ];
 
