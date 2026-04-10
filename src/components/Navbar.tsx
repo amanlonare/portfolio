@@ -23,7 +23,7 @@ export default function Navbar() {
 
     return (
         <nav className={`fixed top-0 left-0 w-full z-50 transition-all duration-300 ${isScrolled ? 'py-3' : 'py-6'}`}>
-            <div className={`mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 transition-all duration-300 ${isScrolled ? 'glass py-2 shadow-lg rounded-xl' : 'max-md:glass max-md:py-2 max-md:rounded-xl'}`}>
+            <div className={`mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 transition-all duration-300 ${isScrolled ? 'backdrop-blur-md bg-white/5 border border-white/10 py-2 shadow-lg rounded-xl' : 'max-md:backdrop-blur-md max-md:bg-white/5 max-md:border max-md:border-white/10 max-md:py-2 max-md:rounded-xl'}`}>
                 <div className="flex items-center justify-between h-12">
                     {/* Logo */}
                     <div className="flex items-center gap-2 group cursor-pointer" onClick={() => window.scrollTo(0, 0)}>
