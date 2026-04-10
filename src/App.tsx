@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { Resume } from "./components/Resume";
 import Navbar from "./components/Navbar";
 import Hero from "./components/Hero";
-import About from "./components/About";
+
 import Chatbot from "./components/Chatbot";
 import ConnectellaCaseStudy from "./components/ConnectellaCaseStudy";
 import AiRoleplayCaseStudy from "./components/AiRoleplayCaseStudy";
@@ -30,6 +30,7 @@ export default function App() {
         ) : (
           <div key="portfolio">
             <Hero />
+
             <Resume onOpenProject={(id) => setActiveCaseStudy(id)} />
           </div>
         )}
