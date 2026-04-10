@@ -17,7 +17,7 @@ export default function Chatbot() {
         "Ask me anything! 👋",
         "Curious about my work? 🚀",
         "Chat with my AI! 🤖",
-        "Let's talk tech! 💻"
+        "Let's talk Design! 💻"
     ];
 
     useEffect(() => {

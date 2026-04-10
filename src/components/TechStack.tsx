@@ -4,6 +4,7 @@ import {
   SiFigma,
   SiFramer,
   SiWebflow,
+  SiReact,
 } from "react-icons/si";
 import { 
   Users, 
@@ -25,7 +26,8 @@ import {
   Notebook, 
   TestTube2,
   Code2,
-  Brush
+  Brush,
+  FlaskConical
 } from "lucide-react";
 
 // Reusable pill component for individual technologies
@@ -138,6 +140,8 @@ export const TechStack = () => {
             <TechPill icon={Palette} name="Adobe Illustrator" color="orange" />
             <TechPill icon={PenTool} name="Fresco" color="pink" />
             <TechPill icon={Notebook} name="Dovetail" color="sky" />
+            <TechPill icon={FlaskConical} name="Stitch" color="cyan" />
+            <TechPill icon={Sparkles} name="Figma Make" color="purple" />
           </div>
         </LayerContainer>
 
@@ -146,7 +150,9 @@ export const TechStack = () => {
           <div className="flex flex-wrap justify-center gap-4">
             <TechPill icon={Code2} name="HTML" color="orange" />
             <TechPill icon={Brush} name="CSS" color="blue" />
+            <TechPill icon={SiReact} name="React" color="sky" />
             <TechPill icon={Sparkles} name="Antigravity" color="cyan" />
+            <TechPill icon={Terminal} name="Claude Code" color="purple" />
             <TechPill icon={Terminal} name="Cursor" color="slate" />
             <TechPill icon={Zap} name="Vibe Coding" color="purple" />
           </div>
