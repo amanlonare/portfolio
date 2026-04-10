@@ -268,7 +268,7 @@ export const Resume = ({ onOpenProject }: { onOpenProject?: (id: string) => void
             />
             <ProjectItem
               index={3}
-              title="Interactive Prototyping & Micro-interactions"
+              title="Interactive Prototyping and microinteractions"
               description="I designed an interactive prototype with micro-interactions to bring the product idea to life and help stakeholders clearly visualize the user experience."
               tags={["Micro interaction", "Prototyping"]}
               link="https://www.behance.net/monuverma"

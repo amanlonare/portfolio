@@ -7,6 +7,7 @@ import Chatbot from "./components/Chatbot";
 import ConnectellaCaseStudy from "./components/ConnectellaCaseStudy";
 import AiRoleplayCaseStudy from "./components/AiRoleplayCaseStudy";
 import SevaAiCaseStudy from "./components/SevaAiCaseStudy";
+import AuroraCaseStudy from "./components/AuroraCaseStudy";
 import { AnimatePresence } from "motion/react";
 
 export default function App() {
@@ -27,6 +28,8 @@ export default function App() {
           <AiRoleplayCaseStudy key="roleplay" onBack={() => setActiveCaseStudy(null)} onOpenProject={(id) => setActiveCaseStudy(id)} />
         ) : activeCaseStudy === 'seva' ? (
           <SevaAiCaseStudy key="seva" onBack={() => setActiveCaseStudy(null)} onOpenProject={(id) => setActiveCaseStudy(id)} />
+        ) : activeCaseStudy === 'prototyping' ? (
+          <AuroraCaseStudy key="prototyping" onBack={() => setActiveCaseStudy(null)} onOpenProject={(id) => setActiveCaseStudy(id)} />
         ) : (
           <div key="portfolio">
             <Hero />
