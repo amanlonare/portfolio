@@ -300,9 +300,17 @@ export const Resume = ({ onOpenProject }: { onOpenProject?: (id: string) => void
           <div className="space-y-16">
             <ExperienceItem
               index={0}
+              role="Design Consultant"
+              company="MindYogi.me | 6 months"
+              period="Nov '25 - Mar '25"
+              description="Designed and prototyped conversational AI experiences using Generative AI tool (Stitch), focusing on creating intuitive, human-like interactions for user engagement and onboarding completion. Continuously iterated on conversational flows and user journeys based on feedback and behavior insights, enhancing overall usability and retention."
+              tags={["GenAI", "Conversational UX", "Prototyping", "AI Service"]}
+            />
+            <ExperienceItem
+              index={2}
               role="UX/UI Designer"
               company="Coditas"
-              period="2024 – Present"
+              period="2024 – 2025"
               description="Leading end-to-end design for global clients and taking full ownership of complex projects single-handedly. Recognized with the 'Star Designer Award' for excellence. Established scalable design systems and improved product usability by 100% through WCAG optimization. Spearheaded high-impact AI initiatives, including an AI roleplay module that increased lead conversions by 45% and conversational UX for LLM training that improved patient engagement by 69%."
               tags={["Design Systems", "Accessibility", "AI UX", "WCAG", "Conversational UX", "Prototyping"]}
             />
@@ -315,7 +323,7 @@ export const Resume = ({ onOpenProject }: { onOpenProject?: (id: string) => void
               tags={["User Research", "Medical UX", "LMS Design", "Operational Efficiency", "Wireframing"]}
             />
             <ExperienceItem
-              index={2}
+              index={3}
               role="UX/UI Apprenticeship"
               company="Coditas"
               period="Oct 2022 – Dec 2022"
@@ -323,7 +331,7 @@ export const Resume = ({ onOpenProject }: { onOpenProject?: (id: string) => void
               tags={["Foundational Design", "Internal Agency Processes", "Creative Collaboration"]}
             />
             <ExperienceItem
-              index={3}
+              index={4}
               role="Product Stylist"
               company="FirstCry.com"
               period="2020 – 2021"

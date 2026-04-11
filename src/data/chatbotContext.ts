@@ -11,23 +11,28 @@ Product Designer with 3 years of experience building intuitive, data-driven, and
 - Phone: +81 8075572462
 - LinkedIn: https://www.linkedin.com/in/monu-kumari-136185195/
 - Behance: https://www.behance.net/monuverma
-- Resume: /Monu_Kumari_JPResume.pdf
+- Resume: /Monu_Kumari_ResumeJp.pdf
 
 # Professional Experience
 
-1. UX Designer | Coditas Solutions (Oct 2022 – Oct 2025)
+1. Design Consultant | MindYogi.me (Nov 2025 – Mar 2025)
+- Designed and prototyped conversational AI experiences using Stitch (GenAI).
+- Focused on intuitive, human-like interactions for engagement and onboarding completion.
+- Iterated on conversational flows and user journeys based on feedback and behavior insights.
+
+2. UX Designer | Coditas Solutions (2024 – 2025)
 - Leading end-to-end design for global clients across B2C, SaaS, Healthcare, and AI sectors.
 - AI Initiatives: Spearheaded an AI roleplay module that boosted sales practice by 75% and increased prospect conversions by 45%.
 - Conversational UX: Designed dialogue paths and tone for LLM training, improving patient engagement by 69% in medical contexts.
 - Accessibility: Optimized complex user flows to meet WCAG standards, achieving a 100% improvement in overall usability.
 - Design Systems: Established scalable design systems to ensure consistency and accelerate product delivery.
 
-2. Associate UX Designer | Coditas Solutions (2023 – 2024)
+3. Associate UX Designer | Coditas Solutions (2023 – 2024)
 - Healthcare: Led the design of patient profiles and medical file management, reducing user errors by 12%.
 - Inventory Management: Redesigned tracking and categorization flows, boosting operational efficiency by 80%.
 - LMS & HRM: Designed comprehensive Learning Management Systems with personalized paths and streamlined HRM recruitment processes.
 
-3. Product Stylist | FirstCry.com (Brainbees Solution) (Mar 2020 – Jul 2021)
+4. Product Stylist | FirstCry.com (Brainbees Solution) (Mar 2020 – Jul 2021)
 - Led creative styling for apparel shoots and seasonal R&D.
 - Concepts: Developed innovative storytelling through stop-motion, contributing to a 12% increase in sales and 100K+ organic social views.
 
