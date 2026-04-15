@@ -9,7 +9,7 @@ export const portfolioData = {
   socials: {
     behance: "https://www.behance.net/monuverma",
     linkedin: "https://www.linkedin.com/in/monu-kumari-136185195/",
-    resume: "/Monu_Kumari_ResumeJp.pdf"
+    resume: "/Kumari_Monu.pdf"
   },
   profilePicture: "/monu_profile.png",
   aboutHeading: "Designing Intuitive and Impactful Digital Products.",

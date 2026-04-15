@@ -11,7 +11,7 @@ Product Designer with 3 years of experience building intuitive, data-driven, and
 - Phone: +81 8075572462
 - LinkedIn: https://www.linkedin.com/in/monu-kumari-136185195/
 - Behance: https://www.behance.net/monuverma
-- Resume: /Monu_Kumari_ResumeJp.pdf
+- Resume: /Kumari_Monu.pdf
 
 # Professional Experience
 
