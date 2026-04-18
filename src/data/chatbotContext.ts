@@ -9,8 +9,8 @@ MSc Business Analytics candidate at the University of Southampton with over 3 ye
 # Contact & Links
 - Email: lonareamogh@gmail.com
 - Phone: +44 7553993584
-- LinkedIn: https://www.linkedin.com/in/monu-kumari-136185195/ (placeholder)
-- Behance: https://www.behance.net/monuverma (placeholder)
+- LinkedIn: https://www.linkedin.com/in/amoghlonare (placeholder)
+- Behance: https://www.behance.net/amoghlonare (placeholder)
 - Resume: /Amogh_Lonare_Resume.pdf
 
 # Professional Experience

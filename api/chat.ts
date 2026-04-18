@@ -26,8 +26,14 @@ MSc Business Analytics candidate with 3+ years at Ubisoft supporting release rea
 - Cleaned and analyzed complex data using Python/Excel, improving accuracy by 20%.
 
 3. Retail & Hospitality Experience (Part Time)
-- Sainsbury's, Waitrose, Taco Bell. 
+- Online Assistant | Sainsbury's: High-volume fulfilment, 198 IPH picking rate.
+- Supermarket Assistant | Waitrose (Dec '25 - Jan '26): Managed tills and logistics.
+- Team Member | Taco Bell: High-pressure customer service.
 
+# Contact & Links
+- Email: lonareamogh@gmail.com
+- LinkedIn: https://www.linkedin.com/in/amoghlonare (placeholder)
+- Behance: https://www.behance.net/amoghlonare (placeholder)
 # Projects
 1. Northrop Grumman Challenge: Multi-agent LLM module "The Brain" for secure reasoning.
 2. MedTech Innovation Programme: Logic for smart medication dispenser.
