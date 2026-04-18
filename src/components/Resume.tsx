@@ -253,6 +253,7 @@ export const Resume = ({ onOpenProject }: { onOpenProject?: (id: string) => void
               role="Data Analyst (Gaming)"
               company="Ubisoft Entertainment SA"
               period="July '22 - July '25"
+              image="https://logo.clearbit.com/ubisoft.com"
               description="Designed 10+ KPI dashboards using Tableau and Power BI, improving reporting efficiency by 35%. Reduced manual reporting workload by 50% through optimized SQL queries and automated data pipelines. Performed statistical analysis on large datasets to identify anomalies and performance patterns, supporting behavioral analysis and high-level decision support."
               tags={["SQL", "Tableau", "Power BI", "KPI Tracking", "Statistical Analysis"]}
             />
@@ -335,7 +336,7 @@ export const Resume = ({ onOpenProject }: { onOpenProject?: (id: string) => void
               role="Online Assistant"
               company="Sainsbury's"
               period="Part Time"
-              image="/companies/sainsburys.png"
+              image="https://logo.clearbit.com/sainsburys.co.uk"
               description="Executed high-volume online fulfilment orders during early morning shifts. Consistently maintained a high picking rate of 198 Items Per Hour (IPH) while ensuring accuracy and order quality."
               tags={["Operations", "Efficiency", "Supply Chain"]}
             />
@@ -344,7 +345,7 @@ export const Resume = ({ onOpenProject }: { onOpenProject?: (id: string) => void
               role="Supermarket Assistant"
               company="Waitrose"
               period="Dec '25 - Jan '26"
-              image="/companies/waitrose.png"
+              image="https://logo.clearbit.com/waitrose.com"
               description="Managed tills, customer service interactions, and online delivery execution during the peak Christmas break. Optimized shop-floor operations through proactive communication and active stocking."
               tags={["Customer Service", "Inventory Management", "Logistics"]}
             />
@@ -353,7 +354,7 @@ export const Resume = ({ onOpenProject }: { onOpenProject?: (id: string) => void
               role="Team Member"
               company="Taco Bell"
               period="Part Time"
-              image="/companies/tacobell.png"
+              image="https://logo.clearbit.com/tacobell.com"
               description="Thrived in a high-pressure hospitality setting by rapidly processing customer orders and managing front-of-house operations. Ensured seamless service execution and food preparation during peak hours."
               tags={["Hospitality", "Fast-Paced Environment", "Teamwork"]}
             />
