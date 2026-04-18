@@ -15,7 +15,7 @@ export default function Chatbot() {
 
     const botMessages = [
         "Ask me about my data work! 📊",
-        "Curious about Ubisoft? 🎮",
+        "Curious about my research? 🔬",
         "Chat with my AI! 🤖",
         "Let's talk Analytics! 📈"
     ];

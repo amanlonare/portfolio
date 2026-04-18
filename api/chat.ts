@@ -47,6 +47,9 @@ MSc Business Analytics candidate with 3+ years at Ubisoft supporting release rea
 # Skills
 - Tools: Python, SQL, Excel, AnyLogic, Tableau, Power BI.
 - Methods: Predictive Modelling, Simulation, Optimization, Risk Assessment.
+
+# Research
+Interested in Decision Analytics, Simulation Modeling, and AI-driven business strategy. Currently exploring multi-agent LLM reasoning for secure enterprise applications.
 `;
 
 export default async function handler(req: Request) {
