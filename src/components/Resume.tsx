@@ -270,6 +270,7 @@ export const Resume = ({ onOpenProject }: { onOpenProject?: (id: string) => void
               role="MSc Business Analytics Student"
               company="University of Southampton"
               period="Sept '25 - Present"
+              image="/companies/univ_sa.png"
               description="Focusing on Decision Analytics, Simulation Modeling, Risk Management, and Data Mining. Applying advanced analytical techniques to solve complex business problems."
               tags={["Decision Analytics", "Simulation Modeling", "Risk Management", "Data Mining"]}
             />
