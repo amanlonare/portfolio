@@ -11,7 +11,7 @@ export default function About() {
     ];
 
     return (
-        <section id="about" className="py-16 md:py-32 relative overflow-hidden">
+        <section id="about" className="py-16 md:py-32 relative overflow-hidden scroll-mt-24">
             <div className="max-w-7xl mx-auto px-6 md:px-12">
                 <div className="flex items-center gap-4 mb-12 md:mb-20">
                     <h3 className="text-2xl md:text-3xl font-bold text-white tracking-tight">About Me</h3>

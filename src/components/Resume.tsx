@@ -241,7 +241,7 @@ export const Resume = ({ onOpenProject }: { onOpenProject?: (id: string) => void
         <About />
 
         {/* Experience Section */}
-        <section id="experience">
+        <section id="experience" className="scroll-mt-24">
           <div className="flex items-center gap-4 mb-20">
             <h3 className="text-3xl font-bold text-white">Professional Experience</h3>
             <div className="h-px flex-1 bg-gradient-to-r from-cyan-500/50 to-transparent" />
@@ -278,7 +278,7 @@ export const Resume = ({ onOpenProject }: { onOpenProject?: (id: string) => void
         </section>
 
         {/* Projects Section */}
-        <section id="projects">
+        <section id="projects" className="scroll-mt-24">
           <div className="flex items-center gap-4 mb-20">
             <h3 className="text-3xl font-bold text-white">Featured Projects</h3>
             <div className="h-px flex-1 bg-gradient-to-r from-cyan-500/50 to-transparent" />
@@ -325,7 +325,7 @@ export const Resume = ({ onOpenProject }: { onOpenProject?: (id: string) => void
         </section>
 
         {/* Retail & Hospitality Section */}
-        <section id="hospitality">
+        <section id="hospitality" className="scroll-mt-24">
           <div className="flex items-center gap-4 mb-20">
             <h3 className="text-3xl font-bold text-white">Retail & Hospitality Experience</h3>
             <div className="h-px flex-1 bg-gradient-to-r from-cyan-500/50 to-transparent" />
@@ -364,7 +364,7 @@ export const Resume = ({ onOpenProject }: { onOpenProject?: (id: string) => void
 
 
         {/* Tech Stack Section */}
-        <section id="skills">
+        <section id="skills" className="scroll-mt-24">
           <div className="flex items-center gap-4 mb-16">
             <h3 className="text-3xl font-bold text-white">Skills</h3>
             <div className="h-px flex-1 bg-gradient-to-r from-cyan-500/50 to-transparent" />
@@ -373,7 +373,7 @@ export const Resume = ({ onOpenProject }: { onOpenProject?: (id: string) => void
         </section>
 
         {/* Contact Section */}
-        <section id="contact" className="pb-32">
+        <section id="contact" className="pb-32 scroll-mt-24">
           <div className="flex items-center gap-4 mb-20">
             <h3 className="text-3xl font-bold text-white">Let's Build Together</h3>
             <div className="h-px flex-1 bg-gradient-to-r from-cyan-500/50 to-transparent" />
