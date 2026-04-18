@@ -77,8 +77,8 @@ const ExperienceItem = ({ role, company, period, description, tags, index, link,
 
     <div className="flex items-center gap-4 mb-4">
       {image && (
-        <div className="w-10 h-10 rounded-lg overflow-hidden border border-white/10 bg-white/5">
-          <img src={image} alt={company} className="w-full h-full object-cover" />
+        <div className="w-12 h-12 rounded-xl overflow-hidden border border-white/10 bg-white p-2 flex items-center justify-center">
+          <img src={image} alt={company} className="w-full h-full object-contain" />
         </div>
       )}
       <div className="flex items-center gap-3">
@@ -253,7 +253,7 @@ export const Resume = ({ onOpenProject }: { onOpenProject?: (id: string) => void
               role="Data Analyst (Gaming)"
               company="Ubisoft Entertainment SA"
               period="July '22 - July '25"
-              image="https://logo.clearbit.com/ubisoft.com"
+              image="/companies/ubisoft.png"
               description="Designed 10+ KPI dashboards using Tableau and Power BI, improving reporting efficiency by 35%. Reduced manual reporting workload by 50% through optimized SQL queries and automated data pipelines. Performed statistical analysis on large datasets to identify anomalies and performance patterns, supporting behavioral analysis and high-level decision support."
               tags={["SQL", "Tableau", "Power BI", "KPI Tracking", "Statistical Analysis"]}
             />
@@ -336,7 +336,7 @@ export const Resume = ({ onOpenProject }: { onOpenProject?: (id: string) => void
               role="Online Assistant"
               company="Sainsbury's"
               period="Part Time"
-              image="https://logo.clearbit.com/sainsburys.co.uk"
+              image="/companies/sainsburys.png"
               description="Executed high-volume online fulfilment orders during early morning shifts. Consistently maintained a high picking rate of 198 Items Per Hour (IPH) while ensuring accuracy and order quality."
               tags={["Operations", "Efficiency", "Supply Chain"]}
             />
@@ -345,7 +345,7 @@ export const Resume = ({ onOpenProject }: { onOpenProject?: (id: string) => void
               role="Supermarket Assistant"
               company="Waitrose"
               period="Dec '25 - Jan '26"
-              image="https://logo.clearbit.com/waitrose.com"
+              image="/companies/waitrose.png"
               description="Managed tills, customer service interactions, and online delivery execution during the peak Christmas break. Optimized shop-floor operations through proactive communication and active stocking."
               tags={["Customer Service", "Inventory Management", "Logistics"]}
             />
@@ -354,7 +354,7 @@ export const Resume = ({ onOpenProject }: { onOpenProject?: (id: string) => void
               role="Team Member"
               company="Taco Bell"
               period="Part Time"
-              image="https://logo.clearbit.com/tacobell.com"
+              image="/companies/tacobell.png"
               description="Thrived in a high-pressure hospitality setting by rapidly processing customer orders and managing front-of-house operations. Ensured seamless service execution and food preparation during peak hours."
               tags={["Hospitality", "Fast-Paced Environment", "Teamwork"]}
             />
