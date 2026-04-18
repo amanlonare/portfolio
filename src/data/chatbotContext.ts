@@ -25,6 +25,11 @@ MSc Business Analytics candidate at the University of Southampton with over 3 ye
 - Cleaned and analyzed complex datasets using Python and Excel, improving reporting accuracy by 20%.
 - Implemented management dashboards tracking 8+ KPIs to support strategic business decisions.
 
+3. Retail & Hospitality Experience (Part Time)
+- Online Assistant | Sainsbury's: High-volume fulfilment and maintained a 198 IPH picking rate.
+- Supermarket Assistant | Waitrose (Dec '25 - Jan '26): Managed tills and logistics during peak Christmas period.
+- Team Member | Taco Bell: Thrived in high-pressure environments, managing customer orders and front-of-house.
+
 # Projects & Innovation
 1. Northrop Grumman Challenge: Designed "The Brain," a multi-agent LLM module for secure backend reasoning.
 2. MedTech Innovation Programme: Developed operational logic for an accessible smart medication dispenser.

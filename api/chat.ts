@@ -25,6 +25,9 @@ MSc Business Analytics candidate with 3+ years at Ubisoft supporting release rea
 2. Data Analyst Intern | Kuber Enterprise (2018 – 2019)
 - Cleaned and analyzed complex data using Python/Excel, improving accuracy by 20%.
 
+3. Retail & Hospitality Experience (Part Time)
+- Sainsbury's, Waitrose, Taco Bell. 
+
 # Projects
 1. Northrop Grumman Challenge: Multi-agent LLM module "The Brain" for secure reasoning.
 2. MedTech Innovation Programme: Logic for smart medication dispenser.

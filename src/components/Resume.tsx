@@ -60,7 +60,7 @@ const getTechIcon = (tag: string) => {
   return Settings; // Default icon
 };
 
-const ExperienceItem = ({ role, company, period, description, tags, index, link }: { role: string, company: string, period: string, description: string, tags: string[], index: number, link?: string }) => (
+const ExperienceItem = ({ role, company, period, description, tags, index, link, image }: { role: string, company: string, period: string, description: string, tags: string[], index: number, link?: string, image?: string }) => (
   <motion.div
     initial={{ opacity: 0, y: 20 }}
     whileInView={{ opacity: 1, y: 0 }}
@@ -75,18 +75,25 @@ const ExperienceItem = ({ role, company, period, description, tags, index, link 
       <span className="text-[10px] md:text-sm font-mono text-gray-500">{period}</span>
     </div>
 
-    <div className="flex items-center gap-3 mb-4">
-      <div className="text-base md:text-lg font-medium text-gray-400">{company}</div>
-      {link && (
-        <a
-          href={link.startsWith('http') ? link : `https://${link}`}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="p-1.5 rounded-lg bg-white/5 text-gray-500 hover:text-cyan-400 hover:bg-cyan-500/10 transition-all"
-        >
-          <ExternalLink className="w-3.5 h-3.5" />
-        </a>
+    <div className="flex items-center gap-4 mb-4">
+      {image && (
+        <div className="w-10 h-10 rounded-lg overflow-hidden border border-white/10 bg-white/5">
+          <img src={image} alt={company} className="w-full h-full object-cover" />
+        </div>
       )}
+      <div className="flex items-center gap-3">
+        <div className="text-base md:text-lg font-medium text-gray-400">{company}</div>
+        {link && (
+          <a
+            href={link.startsWith('http') ? link : `https://${link}`}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="p-1.5 rounded-lg bg-white/5 text-gray-500 hover:text-cyan-400 hover:bg-cyan-500/10 transition-all"
+          >
+            <ExternalLink className="w-3.5 h-3.5" />
+          </a>
+        )}
+      </div>
     </div>
     <p className="text-sm md:text-base text-gray-400 leading-relaxed max-w-3xl mb-6">{description}</p>
 
@@ -311,10 +318,48 @@ export const Resume = ({ onOpenProject }: { onOpenProject?: (id: string) => void
               tags={["IoT", "Arduino", "Automation"]}
               link="#"
               image="/projects/solar_tracker.png"
-              onOpenProject={() => onOpenProject?.('solar')}
             />
           </div>
         </section>
+
+        {/* Retail & Hospitality Section */}
+        <section id="hospitality">
+          <div className="flex items-center gap-4 mb-20">
+            <h3 className="text-3xl font-bold text-white">Retail & Hospitality Experience</h3>
+            <div className="h-px flex-1 bg-gradient-to-r from-cyan-500/50 to-transparent" />
+          </div>
+
+          <div className="space-y-16">
+            <ExperienceItem
+              index={0}
+              role="Online Assistant"
+              company="Sainsbury's"
+              period="Part Time"
+              image="/companies/sainsburys.png"
+              description="Executed high-volume online fulfilment orders during early morning shifts. Consistently maintained a high picking rate of 198 Items Per Hour (IPH) while ensuring accuracy and order quality."
+              tags={["Operations", "Efficiency", "Supply Chain"]}
+            />
+            <ExperienceItem
+              index={1}
+              role="Supermarket Assistant"
+              company="Waitrose"
+              period="Dec '25 - Jan '26"
+              image="/companies/waitrose.png"
+              description="Managed tills, customer service interactions, and online delivery execution during the peak Christmas break. Optimized shop-floor operations through proactive communication and active stocking."
+              tags={["Customer Service", "Inventory Management", "Logistics"]}
+            />
+            <ExperienceItem
+              index={2}
+              role="Team Member"
+              company="Taco Bell"
+              period="Part Time"
+              image="/companies/tacobell.png"
+              description="Thrived in a high-pressure hospitality setting by rapidly processing customer orders and managing front-of-house operations. Ensured seamless service execution and food preparation during peak hours."
+              tags={["Hospitality", "Fast-Paced Environment", "Teamwork"]}
+            />
+          </div>
+        </section>
+
 
         {/* Tech Stack Section */}
         <section id="skills">
