@@ -14,10 +14,10 @@ export default function Navbar() {
     }, []);
 
     const navLinks = [
-        { name: 'Projects', href: '#projects' },
         { name: 'About', href: '#about' },
-        { name: 'Skills', href: '#skills' },
         { name: 'Experience', href: '#experience' },
+        { name: 'Projects', href: '#projects' },
+        { name: 'Skills', href: '#skills' },
         { name: 'Contact', href: '#contact' },
     ];
 
@@ -28,7 +28,7 @@ export default function Navbar() {
                     {/* Logo */}
                     <div className="flex items-center gap-2 group cursor-pointer" onClick={() => window.scrollTo(0, 0)}>
                         <span className="font-orbitron tracking-widest text-[#00f2ff] font-bold text-lg md:text-xl">
-                            &lt;<span className="text-white">monu</span> kumari/&gt;
+                            &lt;<span className="text-white">amogh</span> lonare/&gt;
                         </span>
                     </div>
 

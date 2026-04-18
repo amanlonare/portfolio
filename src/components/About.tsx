@@ -4,10 +4,10 @@ import { Brain, Target, Users, Heart, Sparkles } from 'lucide-react';
 
 export default function About() {
     const highlights = [
-        { icon: Users, title: "User Focused", desc: "Deeply committed to intuitive and human-centered design." },
-        { icon: Brain, title: "AI Driven", desc: "Designing seamless interfaces for complex AI technologies." },
-        { icon: Target, title: "Solution Oriented", desc: "Transforming product visions into impactful digital solutions." },
-        { icon: Sparkles, title: "Visual Excellence", desc: "Crafting aesthetically premium and engaging user interfaces." }
+        { icon: Brain, title: "Data Driven", desc: "Leveraging statistical analysis and machine learning for decision support." },
+        { icon: Target, title: "Business Analytics", desc: "Bridging the gap between technical data and strategic goals." },
+        { icon: Sparkles, title: "Quality Assurance", desc: "Ensuring data integrity and release readiness at a global scale." },
+        { icon: Heart, title: "Professional Impact", desc: "Proven track record with 50% increase in reporting efficiency." }
     ];
 
     return (
@@ -56,9 +56,9 @@ export default function About() {
                                 </div>
                                 
                                 <h4 className="text-3xl md:text-5xl font-bold text-white leading-tight">
-                                    {portfolioData.aboutHeading.split('and')[0]}
+                                    Turning Raw Data into Strategic Insights
                                     <br />
-                                    <span className="text-cyan-400">{portfolioData.aboutHeading.split('and')[1] ? `and ${portfolioData.aboutHeading.split('and')[1]}` : ''}</span>
+                                    <span className="text-cyan-400">and Business Value.</span>
                                 </h4>
 
                                 <p className="text-gray-400 text-lg leading-relaxed max-w-2xl">
@@ -87,10 +87,10 @@ export default function About() {
                             >
                                 <h5 className="text-white font-bold mb-4 flex items-center gap-3 text-lg">
                                     <Heart className="w-5 h-5 text-cyan-400 fill-cyan-400/20" />
-                                    Beyond Designing
+                                    Beyond Analytics
                                 </h5>
                                 <p className="text-gray-400 text-base leading-relaxed">
-                                    When I'm not designing, you'll find me playing <span className="text-white/80">badminton</span>, <span className="text-white/80">skating</span>, and <span className="text-white/80">making art</span>.
+                                    When I'm not analyzing data, you'll find me playing <span className="text-white/80">badminton</span>, competing in <span className="text-white/80">robotics (ABU ROBOCON)</span>, or enjoying a game of <span className="text-white/80">carrom</span>.
                                 </p>
                             </motion.div>
                         </div>

@@ -1,4 +1,4 @@
-# Monu Kumari - UX/UI Designer Portfolio
+# Amogh Lonare - Data Analyst & Business Analyst Portfolio
 
 A modern, high-performance interactive portfolio built with React, Vite, and Tailwind CSS. This portfolio features an integrated **AI Assistant** capable of answering questions about my professional experience, skills, and background, powered by OpenAI/Gemini.
 

@@ -7,27 +7,27 @@ import {
   SiReact,
 } from "react-icons/si";
 import { 
-  Users, 
-  Search, 
-  GitFork, 
-  Map, 
-  Accessibility as LucideAccessibility, 
-  LayoutTemplate, 
-  User, 
-  Zap, 
-  Palette, 
-  Heart, 
-  Layers, 
-  Network, 
-  Activity, 
-  Sparkles, 
-  Terminal, 
-  PenTool, 
-  Notebook, 
-  TestTube2,
+  TrendingUp,
+  Database,
+  Globe,
+  FileSpreadsheet,
+  PieChart,
+  BarChart,
+  Target,
+  Cpu,
+  Notebook,
+  FlaskConical,
+  Activity,
+  Sparkles,
+  Terminal,
   Code2,
-  Brush,
-  FlaskConical
+  GitFork,
+  Network,
+  Layers,
+  Search,
+  Zap,
+  Map,
+  Users
 } from "lucide-react";
 
 // Reusable pill component for individual technologies
@@ -111,50 +111,44 @@ export const TechStack = () => {
       {/* Stack Layers */}
       <div className="space-y-8 relative z-10">
 
-        {/* Designing Skills Layer */}
-        <LayerContainer title="DESIGNING SKILLS" index={0}>
+        {/* Data & Analytical Methods Layer */}
+        <LayerContainer title="ANALYTICAL METHODS" index={0}>
           <div className="flex flex-wrap justify-center gap-4">
-            <TechPill icon={Layers} name="Design System" color="cyan" />
-            <TechPill icon={LucideAccessibility} name="Accessibility (WCAG)" color="purple" />
-            <TechPill icon={Activity} name="Prototyping" color="pink" />
-            <TechPill icon={TestTube2} name="Usability Testing" color="green" />
-            <TechPill icon={Search} name="UX Research" color="blue" />
-            <TechPill icon={Map} name="Journey Mapping" color="orange" />
-            <TechPill icon={Network} name="IA" color="indigo" />
-            <TechPill icon={LayoutTemplate} name="Wireframing" color="sky" />
-            <TechPill icon={User} name="Persona" color="red" />
-            <TechPill icon={GitFork} name="User Flow" color="yellow" />
-            <TechPill icon={Palette} name="UI Design" color="cyan" />
-            <TechPill icon={Zap} name="Interaction Design" color="amber" />
-            <TechPill icon={Heart} name="Human Centered Design Process" color="rose" />
+            <TechPill icon={TrendingUp} name="Predictive Modelling" color="cyan" />
+            <TechPill icon={Activity} name="Simulation Modeling" color="purple" />
+            <TechPill icon={Zap} name="Optimization" color="pink" />
+            <TechPill icon={FlaskConical} name="Risk Assessment" color="green" />
+            <TechPill icon={Target} name="Decision Analytics" color="blue" />
+            <TechPill icon={Search} name="Data Mining" color="orange" />
+            <TechPill icon={Activity} name="Time Series Analysis" color="indigo" />
+            <TechPill icon={Layers} name="Data Cleaning" color="sky" />
+            <TechPill icon={BarChart} name="KPI Tracking" color="red" />
+            <TechPill icon={Activity} name="Statistical Analysis" color="yellow" />
           </div>
         </LayerContainer>
 
-        {/* Design Tools Layer */}
-        <LayerContainer title="DESIGN TOOLS" index={1}>
+        {/* Data & BI Tools Layer */}
+        <LayerContainer title="DATA & BI TOOLS" index={1}>
           <div className="flex flex-wrap justify-center gap-4">
-            <TechPill icon={SiFigma} name="Figma" color="purple" />
-            <TechPill icon={SiFramer} name="Framer" color="blue" />
-            <TechPill icon={SiWebflow} name="Webflow" color="blue" />
-            <TechPill icon={LayoutTemplate} name="Whimsical" color="indigo" />
-            <TechPill icon={Palette} name="Adobe Illustrator" color="orange" />
-            <TechPill icon={PenTool} name="Fresco" color="pink" />
-            <TechPill icon={Notebook} name="Dovetail" color="sky" />
-            <TechPill icon={FlaskConical} name="Stitch" color="cyan" />
-            <TechPill icon={Sparkles} name="Figma Make" color="purple" />
+            <TechPill icon={BarChart} name="Tableau" color="purple" />
+            <TechPill icon={Activity} name="Power BI" color="blue" />
+            <TechPill icon={FileSpreadsheet} name="Advanced Excel" color="green" />
+            <TechPill icon={Database} name="SQL (PostgreSQL/MySQL)" color="indigo" />
+            <TechPill icon={Code2} name="VBA" color="orange" />
+            <TechPill icon={Network} name="AnyLogic" color="pink" />
+            <TechPill icon={Globe} name="Google Workspace" color="sky" />
           </div>
         </LayerContainer>
 
-        {/* Technical Skills Layer */}
-        <LayerContainer title="TECHNICAL SKILLS" index={2}>
+        {/* Technical & Operational Layer */}
+        <LayerContainer title="TECHNICAL & OPERATIONAL" index={2}>
           <div className="flex flex-wrap justify-center gap-4">
-            <TechPill icon={Code2} name="HTML" color="orange" />
-            <TechPill icon={Brush} name="CSS" color="blue" />
-            <TechPill icon={SiReact} name="React" color="sky" />
-            <TechPill icon={Sparkles} name="Antigravity" color="cyan" />
-            <TechPill icon={Terminal} name="Claude Code" color="purple" />
-            <TechPill icon={Terminal} name="Cursor" color="slate" />
-            <TechPill icon={Zap} name="Vibe Coding" color="purple" />
+            <TechPill icon={Terminal} name="Python (Pandas/NumPy)" color="blue" />
+            <TechPill icon={Cpu} name="Arduino/IoT" color="orange" />
+            <TechPill icon={GitFork} name="Git / GitHub" color="slate" />
+            <TechPill icon={Layers} name="JIRA & Confluence" color="blue" />
+            <TechPill icon={Notebook} name="Trello" color="pink" />
+            <TechPill icon={Code2} name="HTML/CSS" color="orange" />
           </div>
         </LayerContainer>
 
@@ -162,7 +156,7 @@ export const TechStack = () => {
           <div className="flex flex-wrap justify-center gap-4">
             <TechPill icon={(props: any) => <TextIcon char="A" {...props} />} name="English" color="blue" />
             <TechPill icon={(props: any) => <TextIcon char="अ" {...props} />} name="Hindi" color="orange" />
-            <TechPill icon={(props: any) => <TextIcon char="あ" {...props} />} name="Japanese(N5)" color="red" />
+            <TechPill icon={(props: any) => <TextIcon char="M" {...props} />} name="Marathi" color="red" />
           </div>
         </LayerContainer>
 

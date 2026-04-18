@@ -30,7 +30,7 @@ export default function Hero() {
             <div className="z-10 text-center px-4 max-w-4xl mx-auto">
                 <h1 className="text-2xl md:text-4xl font-accent mb-2 text-gray-400">Hi there,</h1>
                 <h1 className="text-4xl md:text-6xl font-accent font-extrabold mb-6 tracking-tight text-white">
-                    I'm <span className="text-neon transition-all">Monu Kumari</span>
+                    I'm <span className="text-neon transition-all">Amogh Lonare</span>
                 </h1>
 
                 <div className="h-12 md:h-24 mb-6 md:mb-8 text-xl md:text-5xl font-accent font-extrabold text-[#00f2ff] drop-shadow-[0_0_10px_rgba(0,242,255,0.3)] tracking-tight flex items-center justify-center">
@@ -38,7 +38,7 @@ export default function Hero() {
                 </div>
 
                 <p className="text-sm md:text-lg text-gray-400 mb-8 md:mb-6 max-w-2xl mx-auto leading-relaxed px-4">
-                    Designing purposeful, human-centered, and AI-driven experiences<br className="hidden md:block" /> that help startups and brands build engaging digital products.
+                    Leveraging data analytics, simulation modeling, and business intelligence<br className="hidden md:block" /> to drive strategic growth and operational excellence in the gaming and tech industries.
                 </p>
 
                 <div className="flex justify-center mb-10 md:mb-6 gap-4 md:gap-5">

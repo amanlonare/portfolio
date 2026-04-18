@@ -230,6 +230,44 @@ export const Resume = ({ onOpenProject }: { onOpenProject?: (id: string) => void
 
       <main className="max-w-7xl mx-auto px-6 md:px-12 py-12 md:py-24 space-y-24 md:space-y-32">
 
+        {/* About Section */}
+        <About />
+
+        {/* Experience Section */}
+        <section id="experience">
+          <div className="flex items-center gap-4 mb-20">
+            <h3 className="text-3xl font-bold text-white">Professional Experience</h3>
+            <div className="h-px flex-1 bg-gradient-to-r from-cyan-500/50 to-transparent" />
+          </div>
+
+          <div className="space-y-16">
+            <ExperienceItem
+              index={0}
+              role="Data Analyst (Gaming)"
+              company="Ubisoft Entertainment SA"
+              period="July '22 - July '25"
+              description="Designed 10+ KPI dashboards using Tableau and Power BI, improving reporting efficiency by 35%. Reduced manual reporting workload by 50% through optimized SQL queries and automated data pipelines. Performed statistical analysis on large datasets to identify anomalies and performance patterns, supporting behavioral analysis and high-level decision support."
+              tags={["SQL", "Tableau", "Power BI", "KPI Tracking", "Statistical Analysis"]}
+            />
+            <ExperienceItem
+              index={1}
+              role="Data Analyst Intern"
+              company="Kuber Enterprise"
+              period="Feb '18 - Feb '19"
+              description="Collected and cleaned complex data using Python and Excel, improving reporting accuracy by 20%. Implemented and managed executive dashboards tracking 8+ KPIs to facilitate strategic business decisions."
+              tags={["Python", "Excel", "Data Cleaning", "Business Intelligence"]}
+            />
+            <ExperienceItem
+              index={2}
+              role="MSc Business Analytics Student"
+              company="University of Southampton"
+              period="Sept '25 - Present"
+              description="Focusing on Decision Analytics, Simulation Modeling, Risk Management, and Data Mining. Applying advanced analytical techniques to solve complex business problems."
+              tags={["Decision Analytics", "Simulation Modeling", "Risk Management", "Data Mining"]}
+            />
+          </div>
+        </section>
+
         {/* Projects Section */}
         <section id="projects">
           <div className="flex items-center gap-4 mb-20">
@@ -240,46 +278,43 @@ export const Resume = ({ onOpenProject }: { onOpenProject?: (id: string) => void
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <ProjectItem
               index={0}
-              title="Accessibility for Conectella"
-              description="Researched accessibility improvements for users with color vision deficiencies, optimizing color contrast and visual cues in the UI."
-              tags={["Research", "Accessible Design", "WCAG Guidelines"]}
+              title="Northrop Grumman Challenge"
+              description="Designed 'The Brain', a multi-agent LLM module for secure backend reasoning, focusing on data privacy and efficient decision-making paths."
+              tags={["AI", "Python", "Predictive Modelling"]}
               link="#"
               titleColor="#00f2ff"
-              image="/projects/conectella_abstract.png"
-              onOpenProject={() => onOpenProject?.('connectella')}
+              image="/projects/ai_brain.png"
+              onOpenProject={() => onOpenProject?.('northrop')}
             />
             <ProjectItem
               index={1}
-              title="Seva.AI — An AI Companion"
-              description="Designed an AI-driven user experience for Seva.AI, focusing on conversational UX, user journeys, and interface design to create meaningful interactions that help reduce loneliness and support emotional well-being."
-              tags={["Conversational UX", "AI", "Prototyping"]}
-              link="https://www.behance.net/monuverma"
-              image="/projects/seva_ai_v2.png"
-              onOpenProject={() => onOpenProject?.('seva')}
+              title="MedTech Innovation Programme"
+              description="Designed the operational logic and data architecture for an accessible smart medication dispenser to support elderly users."
+              tags={["Data Architecture", "IoT", "Logic Design"]}
+              link="#"
+              image="/projects/medtech.png"
+              onOpenProject={() => onOpenProject?.('medtech')}
             />
             <ProjectItem
               index={2}
-              title="AI Roleplay for Connectella"
-              description="Designed the UX for an AI-powered roleplay module that helps sales reps practice pitches and handle objections by simulating real call scenarios with AI-driven personas based on their ICP."
-              tags={["AI"]}
-              link="https://www.behance.net/monuverma"
-              image="/projects/roleplay_ai_v2.png"
-              onOpenProject={() => onOpenProject?.('roleplay')}
+              title="BOSS Global Business Competition"
+              description="Managed end-to-end operations of a simulated holiday enterprise, optimizing supply chains and forecasting demand through predictive modeling."
+              tags={["Supply Chain Optimization", "Forecasting", "Business Strategy"]}
+              link="#"
+              image="/projects/business_sim.png"
+              onOpenProject={() => onOpenProject?.('boss')}
             />
             <ProjectItem
               index={3}
-              title="Interactive Prototyping and microinteractions"
-              description="I designed an interactive prototype with micro-interactions to bring the product idea to life and help stakeholders clearly visualize the user experience."
-              tags={["Micro interaction", "Prototyping"]}
-              link="https://www.behance.net/monuverma"
-              image="/projects/prototyping_v4.png"
-              onOpenProject={() => onOpenProject?.('prototyping')}
+              title="IoT-Based Dual-Axis Solar Tracker"
+              description="Designed an automated Arduino-based tracking system using data from light sensors to maximize solar energy absorption efficiency."
+              tags={["IoT", "Arduino", "Automation"]}
+              link="#"
+              image="/projects/solar_tracker.png"
+              onOpenProject={() => onOpenProject?.('solar')}
             />
           </div>
         </section>
-
-        {/* About Section */}
-        <About />
 
         {/* Tech Stack Section */}
         <section id="skills">
@@ -288,57 +323,6 @@ export const Resume = ({ onOpenProject }: { onOpenProject?: (id: string) => void
             <div className="h-px flex-1 bg-gradient-to-r from-cyan-500/50 to-transparent" />
           </div>
           <TechStack />
-        </section>
-
-        {/* Experience Section */}
-        <section id="experience">
-          <div className="flex items-center gap-4 mb-20">
-            <h3 className="text-3xl font-bold text-white">Experience</h3>
-            <div className="h-px flex-1 bg-gradient-to-r from-cyan-500/50 to-transparent" />
-          </div>
-
-          <div className="space-y-16">
-            <ExperienceItem
-              index={0}
-              role="Design Consultant"
-              company="MindYogi.me | 6 months"
-              period="Nov '25 - Mar '25"
-              description="Designed and prototyped conversational AI experiences using Generative AI tool (Stitch), focusing on creating intuitive, human-like interactions for user engagement and onboarding completion. Continuously iterated on conversational flows and user journeys based on feedback and behavior insights, enhancing overall usability and retention."
-              tags={["GenAI", "Conversational UX", "Prototyping", "AI Service"]}
-            />
-            <ExperienceItem
-              index={2}
-              role="UX/UI Designer"
-              company="Coditas"
-              period="2024 – 2025"
-              description="Leading end-to-end design for global clients and taking full ownership of complex projects single-handedly. Recognized with the 'Star Designer Award' for excellence. Established scalable design systems and improved product usability by 100% through WCAG optimization. Spearheaded high-impact AI initiatives, including an AI roleplay module that increased lead conversions by 45% and conversational UX for LLM training that improved patient engagement by 69%."
-              tags={["Design Systems", "Accessibility", "AI UX", "WCAG", "Conversational UX", "Prototyping"]}
-            />
-            <ExperienceItem
-              index={1}
-              role="Associate UI/UX Designer"
-              company="Coditas"
-              period="2023 – 2024"
-              description="Collaborated with cross-functional teams to deliver user-centric healthcare and enterprise solutions. Led design for medical workflows, reducing user errors by 12%. Optimized inventory and HRM systems, boosting operational efficiency by 80% and hiring ratios by 4%. Designed a comprehensive LMS platform with personalized learning paths, while creating detailed wireframes and UI specs aligned with business and technical needs."
-              tags={["User Research", "Medical UX", "LMS Design", "Operational Efficiency", "Wireframing"]}
-            />
-            <ExperienceItem
-              index={3}
-              role="UX/UI Apprenticeship"
-              company="Coditas"
-              period="Oct 2022 – Dec 2022"
-              description="Foundational training in the creative team as a Junior Designer. Gained critical insights into real-world design processes, industry standards, and creative collaboration within a professional agency environment."
-              tags={["Foundational Design", "Internal Agency Processes", "Creative Collaboration"]}
-            />
-            <ExperienceItem
-              index={4}
-              role="Product Stylist"
-              company="FirstCry.com"
-              period="2020 – 2021"
-              description="Led creative styling for apparel shoots and seasonal R&D. Developed innovative storytelling concepts through stop-motion and visual research to enhance product appeal and seasonal branding."
-              tags={["Visual Storytelling", "R&D", "Creative Styling", "Seasonal Concepts"]}
-            />
-          </div>
         </section>
 
         {/* Contact Section */}
@@ -362,9 +346,9 @@ export const Resume = ({ onOpenProject }: { onOpenProject?: (id: string) => void
 
               <div className="space-y-6">
                 {[
-                  { icon: Mail, label: "vmonu7514@gmail.com", href: "mailto:vmonu7514@gmail.com" },
-                  { icon: Linkedin, label: "LinkedIn Profile", href: "https://www.linkedin.com/in/monu-kumari-136185195/" },
-                  { icon: FaBehance, label: "Behance Profile", href: "https://www.behance.net/monuverma" }
+                  { icon: Mail, label: "lonareamogh@gmail.com", href: "mailto:lonareamogh@gmail.com" },
+                  { icon: Linkedin, label: "LinkedIn Profile", href: "https://www.linkedin.com/in/amoghlonare" },
+                  { icon: FaBehance, label: "Behance Profile", href: "https://www.behance.net/amoghlonare" }
                 ].map((item, i) => (
                   <motion.a
                     key={i}
@@ -394,7 +378,7 @@ export const Resume = ({ onOpenProject }: { onOpenProject?: (id: string) => void
                 const name = formData.get('name');
                 const email = formData.get('email');
                 const message = formData.get('message');
-                const targetEmail = "vmonu7514@gmail.com";
+                const targetEmail = "lonareamogh@gmail.com";
                 const subject = encodeURIComponent(`Portfolio Inquiry from ${name}`);
                 const body = encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`);
                 window.location.href = `mailto:${targetEmail}?subject=${subject}&body=${body}`;
@@ -437,7 +421,7 @@ export const Resume = ({ onOpenProject }: { onOpenProject?: (id: string) => void
 
       <footer className="border-t border-white/5 py-16 text-center text-gray-600">
         <div className="max-w-7xl mx-auto px-6">
-          <p className="text-sm">© 2026 Monu Kumari. Built with precision using React & Framer Motion.</p>
+          <p className="text-sm">© 2026 Amogh Lonare. Built with precision using React & Framer Motion.</p>
         </div>
       </footer>
     </div>

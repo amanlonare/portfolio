@@ -19,43 +19,35 @@ if (!process.env.OPENAI_API_KEY && !process.env.VITE_OPENAI_API_KEY) {
 }
 
 const RESUME_CONTEXT = `
-Name: Monu Kumari
-Role: UX/UI Designer / Product Designer
-Location: Tokyo, Japan
+Name: Amogh Lonare
+Role: Data Analyst | Game Developer | Business Analyst
+Location: Southampton, UK (Current) / Pune, India (Home)
 
 # Summary
-Product Designer with 3 years of experience building intuitive, data-driven, and user-focused digital products, including AI-driven solutions. Currently based in Tokyo, I am passionate about simplifying complex workflows and creating meaningful experiences that enhance user satisfaction and product value.
+MSc Business Analytics candidate with 3+ years at Ubisoft Entertainment SA supporting release readiness. Specialized in data cleaning, KPI tracking (Tableau/Power BI), statistical analysis, and simulation modeling.
 
 # Professional Experience
-1. UX Designer | Coditas Solutions (Oct 2022 – Oct 2025)
-- Leading end-to-end design for global clients across B2C, SaaS, Healthcare, and AI sectors.
-- AI Initiatives: Spearheaded an AI roleplay module that boosted sales practice by 75% and increased prospect conversions by 45%.
-- Conversational UX: Designed dialogue paths and tone for LLM training, improving patient engagement by 69% in medical contexts.
-- Accessibility: Optimized complex user flows to meet WCAG standards, achieving a 100% improvement in overall usability.
-- Design Systems: Established scalable design systems to ensure consistency and accelerate product delivery.
+1. Data Analyst (Gaming) | Ubisoft Entertainment SA, Pune (2022 – 2025)
+- Designed 10+ KPI dashboards, improving reporting efficiency by 35%.
+- Reduced manual reporting by 50% through SQL optimization and automation.
+- Performed statistical analysis for anomaly detection and decision support.
 
-2. Associate UX Designer | Coditas Solutions (2023 – 2024)
-- Healthcare: Led the design of patient profiles and medical file management, reducing user errors by 12%.
-- Inventory Management: Redesigned tracking and categorization flows, boosting operational efficiency by 80%.
-- LMS & HRM: Designed comprehensive Learning Management Systems with personalized paths and streamlined HRM recruitment processes.
+2. Data Analyst Intern | Kuber Enterprise (2018 – 2019)
+- Cleaned and analyzed complex data using Python/Excel, improving accuracy by 20%.
 
-3. Product Stylist | FirstCry.com (Mar 2020 – Jul 2021)
-- Led creative styling for apparel shoots and seasonal R&D.
+# Projects
+1. Northrop Grumman Challenge: Multi-agent LLM module "The Brain" for secure reasoning.
+2. MedTech Innovation Programme: Logic for smart medication dispenser.
+3. BOSS Global Business Competition 2026: Supply chain optimization and forecasting.
+4. IoT Solar Tracker: Arduino-based automated tracking system.
 
 # Education
-- Advance Certification in UX UI Design | IIT Guwahati (2022)
-- Bachelor of Computer Science | Pune University (2016)
-- Diploma in Fashion Design and Styling | TTA (2020)
+- MSc Business Analytics | University of Southampton (Present)
+- BE Information Technology | Mumbai University (2022)
 
 # Skills
-- UX/UI Design: User Research, Journey Mapping, Wireframing, Prototyping, Design Systems, Accessibility (WCAG).
-- Tools: Figma, Framer, Webflow, Whimsical, Adobe Illustrator, HTML, CSS, Cursor.
-- Languages: English (Fluent), Hindi (Fluent), Japanese (Beginner/N5).
-
-# Featured Projects
-1. Accessibility for Conectella: Research and UI optimization for users with color vision deficiencies.
-2. Seva.AI — An AI Companion: Conversational UX and interface design for emotional well-being.
-3. AI Roleplay for Connectella: UX design for an AI-powered module simulating sales scenarios.
+- Tools: Python, SQL, Excel, AnyLogic, Tableau, Power BI.
+- Methods: Predictive Modelling, Simulation, Optimization, Risk Assessment.
 `;
 
 app.post('/api/chat', async (req, res) => {
@@ -63,9 +55,9 @@ app.post('/api/chat', async (req, res) => {
         const { messages } = req.body;
         const messageString = JSON.stringify(messages);
 
-        if (messageString.length > 20000) { 
+        if (messageString.length > 20000) {
             return res.json({
-                text: "Monu has put in guardrails to limit the cost of this AI. For deeper discussions or to get in touch, please reach out directly: \n- LinkedIn: https://www.linkedin.com/in/monu-kumari-136185195/ \n- Behance: https://www.behance.net/monuverma \n- Email: vmonu7514@gmail.com"
+                text: "Amogh has put in guardrails to limit the cost of this AI. For deeper discussions or to get in touch, please reach out directly: \n- Email: lonareamogh@gmail.com"
             });
         }
 
@@ -74,15 +66,15 @@ app.post('/api/chat', async (req, res) => {
             messages: [
                 {
                     role: 'system',
-                    content: `You are Monu Kumari's AI Assistant. 
-          Use the provided resume context to answer questions about Monu:
+                    content: `You are Amogh Lonare's AI Assistant. 
+          Use the provided resume context to answer questions about Amogh:
           ${RESUME_CONTEXT}
           
           Guidelines:
-          - Respond in exactly 3-4 professional sentences.
-          - If asked for contact info, provide Monu's LinkedIn, Behance, or Email.
-          - Refer to Monu in the third person (e.g., "Monu has experience in...").
-          - Be professional, creative, and UX-focused.`
+          - Respond in exactly 3-4 professional and data-driven sentences.
+          - If asked for contact info, provide Amogh's email.
+          - Refer to Amogh in the third person (e.g., "Amogh has experience in...").
+          - Be professional, analytical, and insightful.`
                 },
                 ...messages
             ],
@@ -90,7 +82,9 @@ app.post('/api/chat', async (req, res) => {
             max_tokens: 300,
         });
 
-        res.json({ text: response.choices[0].message.content });
+        res.json({
+            text: response.choices[0].message.content
+        });
     } catch (error) {
         console.error('Chat API Error:', error);
         res.status(500).json({ error: 'Internal Server Error' });

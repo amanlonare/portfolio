@@ -14,10 +14,10 @@ export default function Chatbot() {
     const [currentMessageIndex, setCurrentMessageIndex] = useState(0);
 
     const botMessages = [
-        "Ask me anything! 👋",
-        "Curious about my work? 🚀",
+        "Ask me about my data work! 📊",
+        "Curious about Ubisoft? 🎮",
         "Chat with my AI! 🤖",
-        "Let's talk Design! 💻"
+        "Let's talk Analytics! 📈"
     ];
 
     useEffect(() => {
@@ -32,7 +32,7 @@ export default function Chatbot() {
     const [messages, setMessages] = useState<Message[]>([
         {
             id: "1",
-            text: "Hi there! I'm Monu's AI assistant. Ask me anything about her experience, skills, or projects!",
+            text: "Hi there! I'm Amogh's AI assistant. Ask me anything about his data analysis experience, skills, or projects!",
             sender: "bot",
             timestamp: new Date()
         }

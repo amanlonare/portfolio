@@ -1,18 +1,18 @@
 export const portfolioData = {
-  name: "Monu Kumari",
-  title: "UX/UI Designer",
+  name: "Amogh Lonare",
+  title: "Data Analyst | Game Developer | Business Analyst",
   roles: [
-    "UI Designer",
-    "UX Researcher",
-    "UX Strategist"
+    "Data Analyst",
+    "Game Developer",
+    "Business Analyst"
   ],
   socials: {
-    behance: "https://www.behance.net/monuverma",
-    linkedin: "https://www.linkedin.com/in/monu-kumari-136185195/",
-    resume: "/Kumari_Monu.pdf"
+    behance: "https://www.behance.net/amoghlonare",
+    linkedin: "https://www.linkedin.com/in/amoghlonare",
+    resume: "/Amogh_Lonare_Resume.pdf"
   },
-  profilePicture: "/monu_profile.png",
-  aboutHeading: "Designing Intuitive and Impactful Digital Products.",
-  about: "Product Designer with 3 years of experience building intuitive, data-driven, and user-focused digital products, including AI-driven solutions. Passionate about simplifying complex workflows and creating meaningful experiences that enhance user satisfaction and product value.",
-  aboutQuote: "Designing AI-driven, user-centered experiences that transform complex technologies into intuitive and engaging digital products."
+  profilePicture: "/amanlonare.jpeg",
+  aboutHeading: "Driving Business Value Through Data, Analytics, and Innovation.",
+  about: "MSc Business Analytics candidate with 3+ years of experience in the gaming industry (Ubisoft) supporting release readiness and data-driven decision making. Passionate about applying machine learning, simulation modeling, and predictive analytics to optimize business processes and enhance product strategy.",
+  aboutQuote: "Transforming complex data into actionable insights to drive strategic growth and operational excellence."
 };
