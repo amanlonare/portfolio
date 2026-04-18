@@ -61,9 +61,9 @@ export default function About() {
                                     <span className="text-cyan-400">and Business Value.</span>
                                 </h4>
 
-                                <p className="text-gray-400 text-lg leading-relaxed max-w-2xl">
-                                    {portfolioData.about}
-                                </p>
+                                <p className="text-gray-400 leading-relaxed text-sm md:text-base">
+                            Beyond analytics, you can find me analyzing competitive game mechanics, exploring immersive game dev environments, or diving into professional gaming strategy.
+                        </p>
 
                                 <div className="p-6 rounded-2xl bg-white/5 border border-white/10 max-w-2xl">
                                     <p className="text-gray-300 text-base leading-relaxed italic">
