@@ -366,7 +366,7 @@ export const Resume = ({ onOpenProject }: { onOpenProject?: (id: string) => void
         {/* Tech Stack Section */}
         <section id="skills" className="scroll-mt-24">
           <div className="flex items-center gap-4 mb-16">
-            <h3 className="text-3xl font-bold text-white">Skills</h3>
+            <h3 className="text-3xl font-bold text-white">Technical Skills</h3>
             <div className="h-px flex-1 bg-gradient-to-r from-cyan-500/50 to-transparent" />
           </div>
           <TechStack />
