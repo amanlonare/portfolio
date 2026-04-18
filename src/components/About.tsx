@@ -61,9 +61,9 @@ export default function About() {
                                     <span className="text-cyan-400">and Business Value.</span>
                                 </h4>
 
-                                <p className="text-gray-400 leading-relaxed text-sm md:text-base">
-                            Beyond analytics, you can find me analyzing competitive game mechanics, exploring immersive game dev environments, or diving into professional gaming strategy.
-                        </p>
+                                <p className="text-gray-400 text-lg leading-relaxed max-w-2xl">
+                                    {portfolioData.about}
+                                </p>
 
                                 <div className="p-6 rounded-2xl bg-white/5 border border-white/10 max-w-2xl">
                                     <p className="text-gray-300 text-base leading-relaxed italic">
@@ -90,7 +90,7 @@ export default function About() {
                                     Beyond Analytics
                                 </h5>
                                 <p className="text-gray-400 text-base leading-relaxed">
-                                    When I'm not analyzing data, you'll find me playing <span className="text-white/80">badminton</span>, competing in <span className="text-white/80">robotics (ABU ROBOCON)</span>, or enjoying a game of <span className="text-white/80">carrom</span>.
+                                    When I'm not analyzing data, you'll find me playing <span className="text-white/80">badminton</span>, analyzing <span className="text-white/80">competitive game mechanics</span>, or enjoying a game of <span className="text-white/80">carrom</span>.
                                 </p>
                             </motion.div>
                         </div>
