@@ -1,6 +1,6 @@
 import { TechStack } from "./TechStack";
 import { motion } from "motion/react";
-import { Github, Linkedin, Mail, MapPin, Download, Brain, Database, Mic, Settings, Layers, Server, Satellite, BarChart, Box, ExternalLink, FileText, Globe, BookOpen, Send, User, MessageSquare, ArrowUpRight, Search, Accessibility, ShieldCheck, Zap, Activity, LayoutTemplate, PenTool, Palette, Sparkles, Image, Users, Instagram } from "lucide-react";
+import { Github, Linkedin, Mail, MapPin, Download, Brain, Database, Mic, Settings, Layers, Server, Satellite, BarChart, Box, ExternalLink, FileText, Globe, BookOpen, Send, User, MessageSquare, ArrowUpRight, Search, Accessibility, ShieldCheck, Zap, Activity, LayoutTemplate, PenTool, Palette, Sparkles, Image, Users, Instagram, Cpu, Lightbulb, ShoppingBag } from "lucide-react";
 import { SiLangchain, SiFlutter, SiFastapi, SiOpenai, SiMixpanel, SiApachekafka } from "react-icons/si";
 import { FaCogs, FaProjectDiagram, FaAws, FaMedium, FaBehance } from "react-icons/fa";
 import About from "./About";
@@ -243,6 +243,9 @@ export const Resume = ({ onOpenProject }: { onOpenProject?: (id: string) => void
         {/* Experience Section */}
         <section id="experience" className="scroll-mt-24">
           <div className="flex items-center gap-4 mb-20">
+            <div className="w-12 h-12 rounded-2xl bg-cyan-500/10 flex items-center justify-center border border-cyan-500/20">
+              <Database className="w-6 h-6 text-cyan-400" />
+            </div>
             <h3 className="text-3xl font-bold text-white">Professional Experience</h3>
             <div className="h-px flex-1 bg-gradient-to-r from-cyan-500/50 to-transparent" />
           </div>
@@ -280,8 +283,11 @@ export const Resume = ({ onOpenProject }: { onOpenProject?: (id: string) => void
         {/* Projects Section */}
         <section id="projects" className="scroll-mt-24">
           <div className="flex items-center gap-4 mb-20">
+            <div className="w-12 h-12 rounded-2xl bg-purple-500/10 flex items-center justify-center border border-purple-500/20">
+              <Lightbulb className="w-6 h-6 text-purple-400" />
+            </div>
             <h3 className="text-3xl font-bold text-white">Featured Projects</h3>
-            <div className="h-px flex-1 bg-gradient-to-r from-cyan-500/50 to-transparent" />
+            <div className="h-px flex-1 bg-gradient-to-r from-purple-500/50 to-transparent" />
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
@@ -327,8 +333,11 @@ export const Resume = ({ onOpenProject }: { onOpenProject?: (id: string) => void
         {/* Retail & Hospitality Section */}
         <section id="hospitality" className="scroll-mt-24">
           <div className="flex items-center gap-4 mb-20">
+            <div className="w-12 h-12 rounded-2xl bg-orange-500/10 flex items-center justify-center border border-orange-500/20">
+              <ShoppingBag className="w-6 h-6 text-orange-400" />
+            </div>
             <h3 className="text-3xl font-bold text-white">Retail & Hospitality Experience</h3>
-            <div className="h-px flex-1 bg-gradient-to-r from-cyan-500/50 to-transparent" />
+            <div className="h-px flex-1 bg-gradient-to-r from-orange-500/50 to-transparent" />
           </div>
 
           <div className="space-y-16">
@@ -366,6 +375,9 @@ export const Resume = ({ onOpenProject }: { onOpenProject?: (id: string) => void
         {/* Tech Stack Section */}
         <section id="skills" className="scroll-mt-24">
           <div className="flex items-center gap-4 mb-16">
+            <div className="w-12 h-12 rounded-2xl bg-cyan-500/10 flex items-center justify-center border border-cyan-500/20">
+              <Cpu className="w-6 h-6 text-cyan-400" />
+            </div>
             <h3 className="text-3xl font-bold text-white">Technical Skills</h3>
             <div className="h-px flex-1 bg-gradient-to-r from-cyan-500/50 to-transparent" />
           </div>
@@ -375,8 +387,11 @@ export const Resume = ({ onOpenProject }: { onOpenProject?: (id: string) => void
         {/* Contact Section */}
         <section id="contact" className="pb-32 scroll-mt-24">
           <div className="flex items-center gap-4 mb-20">
+            <div className="w-12 h-12 rounded-2xl bg-blue-500/10 flex items-center justify-center border border-blue-500/20">
+              <Mail className="w-6 h-6 text-blue-400" />
+            </div>
             <h3 className="text-3xl font-bold text-white">Let's Build Together</h3>
-            <div className="h-px flex-1 bg-gradient-to-r from-cyan-500/50 to-transparent" />
+            <div className="h-px flex-1 bg-gradient-to-r from-blue-500/50 to-transparent" />
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-20">

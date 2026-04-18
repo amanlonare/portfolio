@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Menu, X } from 'lucide-react';
+import { Menu, X, Brain, Database, Cpu, Briefcase, ShoppingBag, Lightbulb, Mail } from 'lucide-react';
 
 export default function Navbar() {
     const [isScrolled, setIsScrolled] = useState(false);
@@ -27,9 +27,12 @@ export default function Navbar() {
             <div className={`mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 transition-all duration-300 ${isScrolled ? 'backdrop-blur-md bg-white/5 border border-white/10 py-2 shadow-lg rounded-xl' : 'max-md:backdrop-blur-md max-md:bg-white/5 max-md:border max-md:border-white/10 max-md:py-2 max-md:rounded-xl'}`}>
                 <div className="flex items-center justify-between h-12">
                     {/* Logo */}
-                    <div className="flex items-center gap-2 group cursor-pointer" onClick={() => window.scrollTo(0, 0)}>
+                    <div className="flex items-center gap-3 group cursor-pointer" onClick={() => window.scrollTo(0, 0)}>
+                        <div className="w-10 h-10 rounded-xl bg-cyan-500/10 flex items-center justify-center border border-cyan-500/20 group-hover:border-cyan-500/50 transition-all">
+                            <Brain className="w-6 h-6 text-[#00f2ff]" />
+                        </div>
                         <span className="font-orbitron tracking-widest text-[#00f2ff] font-bold text-lg md:text-xl">
-                            &lt;<span className="text-white">amogh</span> lonare/&gt;
+                            amogh <span className="text-white">lonare</span>
                         </span>
                     </div>
 
