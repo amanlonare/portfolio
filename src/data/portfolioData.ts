@@ -7,7 +7,7 @@ export const portfolioData = {
     "Business Analyst"
   ],
   socials: {
-    behance: "https://www.behance.net/amoghlonare",
+    instagram: "https://www.instagram.com/amoghlonare",
     linkedin: "https://www.linkedin.com/in/amoghlonare",
     resume: "/Amogh_Lonare_Resume.pdf"
   },

@@ -1,6 +1,6 @@
 import { TechStack } from "./TechStack";
 import { motion } from "motion/react";
-import { Github, Linkedin, Mail, MapPin, Download, Brain, Database, Mic, Settings, Layers, Server, Satellite, BarChart, Box, ExternalLink, FileText, Globe, BookOpen, Send, User, MessageSquare, ArrowUpRight, Search, Accessibility, ShieldCheck, Zap, Activity, LayoutTemplate, PenTool, Palette, Sparkles, Image, Users } from "lucide-react";
+import { Github, Linkedin, Mail, MapPin, Download, Brain, Database, Mic, Settings, Layers, Server, Satellite, BarChart, Box, ExternalLink, FileText, Globe, BookOpen, Send, User, MessageSquare, ArrowUpRight, Search, Accessibility, ShieldCheck, Zap, Activity, LayoutTemplate, PenTool, Palette, Sparkles, Image, Users, Instagram } from "lucide-react";
 import { SiLangchain, SiFlutter, SiFastapi, SiOpenai, SiMixpanel, SiApachekafka } from "react-icons/si";
 import { FaCogs, FaProjectDiagram, FaAws, FaMedium, FaBehance } from "react-icons/fa";
 import About from "./About";
@@ -395,7 +395,7 @@ export const Resume = ({ onOpenProject }: { onOpenProject?: (id: string) => void
                 {[
                   { icon: Mail, label: "lonareamogh@gmail.com", href: "mailto:lonareamogh@gmail.com" },
                   { icon: Linkedin, label: "LinkedIn Profile", href: "https://www.linkedin.com/in/amoghlonare" },
-                  { icon: FaBehance, label: "Behance Profile", href: "https://www.behance.net/amoghlonare" }
+                  { icon: Instagram, label: "Instagram Profile", href: "https://www.instagram.com/amoghlonare" }
                 ].map((item, i) => (
                   <motion.a
                     key={i}

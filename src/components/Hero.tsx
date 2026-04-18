@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react';
 import Typed from 'typed.js';
-import { Linkedin, ExternalLink } from 'lucide-react';
-import { FaBehance, FaProjectDiagram } from 'react-icons/fa';
+import { Linkedin, ExternalLink, Instagram } from 'lucide-react';
+import { FaProjectDiagram } from 'react-icons/fa';
 import ThreeCanvas from './ThreeCanvas';
 import { portfolioData } from '../data/portfolioData';
 
@@ -43,7 +43,7 @@ export default function Hero() {
 
                 <div className="flex justify-center mb-10 md:mb-6 gap-4 md:gap-5">
                     {[
-                        { icon: FaBehance, href: portfolioData.socials.behance },
+                        { icon: Instagram, href: portfolioData.socials.instagram },
                         { icon: Linkedin, href: portfolioData.socials.linkedin },
                     ].map((social, index) => (
                         <a

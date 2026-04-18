@@ -33,7 +33,7 @@ MSc Business Analytics candidate with 3+ years at Ubisoft supporting release rea
 # Contact & Links
 - Email: lonareamogh@gmail.com
 - LinkedIn: https://www.linkedin.com/in/amoghlonare (placeholder)
-- Behance: https://www.behance.net/amoghlonare (placeholder)
+- Instagram: https://www.instagram.com/amoghlonare (placeholder)
 # Projects
 1. Northrop Grumman Challenge: Multi-agent LLM module "The Brain" for secure reasoning.
 2. MedTech Innovation Programme: Logic for smart medication dispenser.
